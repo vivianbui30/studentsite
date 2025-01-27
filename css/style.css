@@ -116,6 +116,8 @@ footer {
 .courses h3 {
     text-align: center;
     color: rgb(153, 115, 175);
+    margin: 1em;
+    font-size: 150%;
 }
 
 .courses h3, .courses ul {
