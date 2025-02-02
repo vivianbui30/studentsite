@@ -52,10 +52,65 @@ header a:hover {
     padding: 1em;
 }
 
+/* MAIN */
+main { 
+    background: rgb(236, 234, 250);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(153, 115, 175, .4);
+}
+
+section {
+    padding: 3em 1em;
+}
+
 /* FOOTER */
 footer {
     border-top: 1px solid rgba(0,0,0,.05);
     padding: 1em;
+}
+
+/* LAYOUT */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 3em 1em;
+}
+
+@media (min-width: 768px) {
+    .two-col-sidebar {
+        display: grid;
+        grid-template-columns: 20em auto;
+    }
+    .two-col-sidebar aside {
+        border-right: 1px solid rgb (0,0,0,.1)
+    }
+}
+
+aside {
+    padding: 0 1em;
+}
+
+primary {
+    padding: 0 1em;
+}
+
+.primary a {
+    color: rgb(153, 115, 175, .4);
+}
+
+.primary a:hover {
+    color: rgb(153, 115, 175);
+}
+
+.two-col-sidebar a {
+    color: rgb(153, 115, 175, .4);
+}
+
+.two-col-sidebar a:hover {
+    color: rgb(153, 115, 175);
 }
 
 /* SOCIAL NAV */
@@ -180,3 +235,39 @@ footer a:hover {
 .projects a:hover {
     color: rgb(153, 115, 175);
 }
+
+/* CODE BLOCKS */
+
+pre code {
+    width: 100%;
+    display: block;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 1em 3em;
+    margin-bottom: 1em;
+    line-height: 1.5;
+  }
+
+.markup-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 1em 3em;
+    margin-bottom: 1em;
+}
+
+/* DEFINITION LISTS */
+dt {
+    font-weight: bold;
+    margin-top: 1em;
+}
+dd {
+    margin: 0;
+}
+
+/* FOR DEV PURPOSES */
+/* body * {
+    background-color: rgba(0,0,0,.05) !important;
+    border: 1px solid rgba(0,0,0,.1) !important;
+    color: rgba(0,0,0,.5) !important;
+} */
