@@ -89,9 +89,9 @@ a: hover {
 }
 
 /* HELPER CLASSES */
- .text-centered {
+ /* .text-centered {
     text-align: center;
- }
+ } */
  .full-width {
     max-width: none;
     width: 100%;
