@@ -83,7 +83,7 @@ a {
     text-decoration: none;
 }
 
-a: hover {
+a:hover {
     color: rgba(0,0,153,1);
     text-decoration: underline;
 }
@@ -140,4 +140,151 @@ button:hover {
 .button.alt:hover {
     border-color: rgba(0,0,153,1);
     color: rgba(255,255,255,1);
+}
+
+/* LAYOUT */
+
+/* SIMPLE RESET */
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+    /* TABLET SIZED STYLING GOES HERE */
+}
+
+@media (min-width: 1050px) {
+    body {
+        font-size: 100%; /* 16px */
+    }
+}
+
+@media (min-width: 1250px) {
+    body {
+        font-size: 112.5%; /* 18px */
+    }
+    .container {
+        max-width: 1200px;   
+    }
+}
+
+/* FOR DEMO PURPOSES ONLY */
+body.demo {
+    padding-top: 2em;
+}
+
+body.demo::before {
+    content: "Small (Mobile) Screen (less than 768px)";
+    background-color: powderblue;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    padding: .25em;
+}
+
+@media (min-width: 768px) {
+    body.demo::before {
+        content: "Medium (Tablet) Screen (768px - 1050px)";
+        background-color: palevioletred;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        text-align: center;
+        padding: .25em;
+}
+}
+
+@media (min-width: 1050px) {
+    body.demo::before {
+        content: "Large (Notebook) Screen (1050px - 1250px)";
+        background-color: palegoldenrod;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        text-align: center;
+        padding: .25em;
+}
+}
+
+@media (min-width: 1250px) {
+    body.demo::before {
+        content: "Extra Large (Desktop) Screen (1250px +)";
+        background-color: peachpuff;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        text-align: center;
+        padding: .25em;
+}
+}
+
+/* SEMATIC GRID SYSTEM */
+
+.row > .column {
+    margin-bottom: 4%;
+}
+
+@media (min-width: 768px) {
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-left: -2%;
+        margin-right: -2%;
+    }
+    
+    .row > .column {
+        flex-grow: 1;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .row > .column.one-half {
+        max-width: 46%;
+    }
+
+    .row > .column.one-third {
+        max-width: 29.3333%;
+    }
+
+    .row > .column.two-thirds {
+        max-width: 66.6666%;
+    }
+
+    .row > .column.one-fourth {
+        max-width: 21%;
+    }
+
+    .row > .column.three-fourths {
+        max-width: 79%;
+    }
+
+    .row > .column.two-fourths {
+        max-width: 58%;
+    }
+
+    .row > .column.centered {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .row > .column.centered {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* FOR DEMO PURPOSES ONLY */
+.demo .column {
+    background-color: rgba(0, 0, 0, .2);
+    padding: 1em;
+    text-align: center;
 }

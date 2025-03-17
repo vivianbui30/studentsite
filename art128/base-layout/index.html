@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>Base | Content</title>
+    <title>Base | Layout</title>
     <meta name="description" content="This is a starter HTML + CSS + JS boilerplate set of code for website projects."/>
 
     <!-- FOR MOBILE / SMALL SCREENS -->
@@ -12,62 +12,66 @@
     <link rel="stylesheet" href="css/style.css"/>
     
 </head>
-<body>
-    <h1 class="text-centered">This is a Heading 1</h1>
-    <h2 class="text-centered">This is a Heading 2</h2>
-    <h3 class="text-centered">This is a Heading 3</h3>
-    <h4 class="text-centered">This is a Heading 4</h4>
-    <h5 class="text-centered">This is a Heading 5</h5>
-    <h6 class="text-centered">This is a Heading 6</h6>
+<body class="demo">
 
-    <p class="text-centered">Lorem ipsum dolor sit amet consectetur adipisicing elit. This is <strong>something bold</strong> and this is <em>something italic</em>.  And this is an <a href="#">inline link</a>. Obcaecati beatae aspernatur repellendus, natus architecto dolorum perferendis, nobis quam illum facere optio voluptatibus quo fugiat placeat asperiores aliquam sunt similique unde reprehenderit officiis adipisci odit perspiciatis! Reiciendis commodi nesciunt, aliquid soluta corrupti ab sit dolorem minus facere deserunt, rerum laudantium voluptas?</p>
-    <p class="text-centered">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illum atque iste vel reiciendis. Saepe deserunt voluptates magni necessitatibus officiis at, asperiores reiciendis quaerat nulla sapiente hic ipsa eius tempore praesentium quidem eligendi magnam qui mollitia molestiae dolore maiores possimus quod! Esse vero debitis natus, accusantium adipisci incidunt similique, nesciunt optio quod commodi nostrum repellat quidem minima nihil non ea, beatae minus quos eos? Voluptates eveniet nemo sint molestiae quae cumque perferendis, eum quo omnis.</p>
-    <p class="text-centered">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, molestiae eveniet ut quos eos cupiditate voluptate eius quod repellendus quam.</p>
-    <h4>This is an unordered list:</h4>
-        <ul>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item
-                <ul>
-                    <li>List Item</li>
-                    <li>List Item</li>
-                    <li>List Item</li>
-                    <li>List Item</li>
-                </ul>
-            </li>
-            <li>List Item</li>
-            <li>List Item</li>
-        </ul>
+    <div class="container">
 
-        <h4>This is an ordered list:</h4>
-        <ol>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item
-                <ol>
-                    <li>List Item</li>
-                    <li>List Item</li>
-                    <li>List Item</li>
-                    <li>List Item</li>
-                </ol>
-            </li>
-            <li>List Item</li>
-            <li>List Item</li>
-        </ol>
+        <h1>Base Layout</h1>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum itaque? Ipsa voluptatem fugiat voluptas neque, expedita, quae ipsum obcaecati reiciendis perspiciatis tenetur, iste quis. Veniam asperiores repellendus voluptatem facilis cupiditate dolorem. Eveniet inventore qui sint labore, et excepturi ducimus aliquid obcaecati. Incidunt nisi eum dicta necessitatibus unde at magni error temporibus illum perferendis minima ex voluptatum optio quod sequi neque, voluptatem accusantium molestias nostrum. Eaque soluta dolor perspiciatis amet, natus voluptatem voluptatum impedit quaerat nihil perferendis neque! Dicta accusamus possimus laboriosam fuga labore et, quia placeat consequuntur eos, sed unde magni, reprehenderit amet ullam dolores architecto facere numquam. Natus.</div>
+        
+        <h2>Grid</h2>
 
-        <h4>Links:</h4>
-        <p>This is a <a href="#">link</a>.</p>
+        <div class="row">
+            <div class="column one-whole">One Whole Column</div>
+        </div>
 
-        <h4>Helper Classes</h4>
-        <p class="text-centered ">This should be center justify text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur deserunt adipisci provident quam, nemo in a veritatis vel rerum totam eius voluptas cumque quos eum quas tempore nulla possimus ex quasi pariatur illo doloremque itaque, dolore corrupti? Magni, iure, explicabo, numquam dignissimos voluptate consectetur tempore voluptatibus facilis sapiente blanditiis veniam?</p>
+        <div class="row">
+            <div class="column one-half">One Half Column</div>
+            <div class="column one-half">One Half Column</div>
+        </div>
 
-        <h4>Images:</h4>
-        <img src="https://placehold.co/1500x500" alt="This is a placeholder image." width="1500" height="500" />
+        <div class="row">
+            <div class="column one-third">One Third Column</div>
+            <div class="column one-third">One Third Column</div>
+            <div class="column one-third">One Third Column</div>
+        </div>
 
-        <h4>Buttons</h4>
-        <a href="#" class="button">Default Button</a>
-        <a href="#" class="button alt">Alt Button</a>
-        <button>Button Element</button>
+        <div class="row">
+            <div class="column two-thirds">Two Thirds Column</div>
+            <div class="column one-third">One Third Column</div>
+        </div>
+
+        <div class="row">
+            <div class="column one-fourth">One Fourth Column</div>
+            <div class="column one-fourth">One Fourth Column</div>
+            <div class="column one-fourth">One Fourth Column</div>
+            <div class="column one-fourth">One Fourth Column</div>
+        </div>
+
+        <div class="row">
+            <div class="column one-fourth">One Fourth Column</div>
+            <div class="column three-fourths">Three Fourths Column</div>
+        </div>
+
+        <div class="row">
+            <div class="column one-fourth">One Fourth Column</div>
+            <div class="column two-fourths">Two Fourths Column</div>
+            <div class="column one-fourth">One Fourth Column</div>
+        </div>
+
+        <div class="row">
+            <div class="column one-third centered">One Third Column Centered</div>
+        </div>
+
+        <div class="row">
+            <div class="column one-half centered">One Half Column Centered</div>
+        </div>
+
+        <div class="row">
+            <div class="column two-thirds centered">Two Thirds Column Centered</div>
+        </div>
+
+</div>
     
         <!-- MAIN JS FILE -->
      <script src="js/script.js"></script>
