@@ -360,6 +360,10 @@ body.demo::before {
     padding: 1em;
 }
 
+.site-nav .menu-button {
+    display: none;
+}
+
 /* SECTIONS */
 section {
     padding: 3em 0;
@@ -382,4 +386,60 @@ section {
 
 .row p {
     margin-left: 0;
+}
+
+/* TOGGLE NAV */
+@media (max-width: 767px) {
+    .toggle-nav .site-id {
+        position: absolute;
+        margin-top: .5em;
+    }
+    .toggle-nav .site-nav {
+        text-align: right;
+    }
+    .toggle-nav .site-nav .menu-button {
+        display: block;
+        display: inline-block;
+        cursor: pointer;
+        padding: 0.3em 0.8em;
+        border: 1px solid black;
+        margin-bottom: 0.5em;
+    }
+    .toggle-nav .site-nav .menu-button::selection {
+        background-color: rgba(255,255,255,0);
+    }
+    .toggle-nav .site-nav ul {
+        display: block;
+        text-align: center;
+    }
+    .toggle-nav .site-nav a:hover {
+        background-color: rgba(0,0,153,1);
+        color: white;
+    }
+    .toggle-nav[data-navstate="closed"] ul {
+        height: 0;
+        overflow: hidden;
+    }
+    .toggle-nav[data-navstate="open"] ul {
+        height: auto;
+        overflow: visible;
+    }
+
+/* NAVICON */
+    .toggle-nav .site-nav .menu-button.navicon {
+        border: none;
+        color: rgba(255,255,255,0);
+        padding: 0;
+    }
+    .toggle-nav .site-nav .menu-button.navicon::after {
+        content: "\2630";
+        display: inline-block;
+        color: rgba(0,0,0,.8);
+        font-size: 1.5em;
+        margin-top: .1em;
+        padding: 0.1em 0;
+    }
+    .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
+        content: "\2715";
+    }
 }
