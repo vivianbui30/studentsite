@@ -346,8 +346,6 @@ section {
 }
 
 /* HERO */
-
-
 .hero {
     padding: 6em 4%;
     background-color: rgba(0,0,0,.1);
@@ -359,6 +357,11 @@ section {
     margin-left: auto;
     margin-right: auto;
 }
+
+.row p {
+    margin-left: 0;
+}
+
 
 /* TOGGLE NAV */
 
