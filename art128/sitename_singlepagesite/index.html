@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>Site Name | About Us</title>
+    <title>Site Name | Single Page Site</title>
     <meta name="description" content="This is a starter HTML + CSS + JS boilerplate set of code for website projects."/>
 
     <!-- FOR MOBILE / SMALL SCREENS -->
@@ -13,34 +13,61 @@
     
 </head>
 <body>
-
-    <header class="site-header toggle-nav" data-navstate="closed">
+    <header id="top" class="site-header toggle-nav animated sticky" data-navstate="closed">
         <div class="container">
             <div class="site-id">
-                <h1>
-                    <a href="index.html">Site Name</a> / About
-                </h1>
+                <h1><a class="scroll" href="#top">Site Name</a> 
+                <span class="hidden-sm"> / Single Page Site</span></h1>
             </div>
             <nav class="site-nav">
                 <div class="menu-button navicon">Menu</div>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="scroll" href="#top">Home</a></li>
+                    <li><a class="scroll" href="#about">About</a></li>
+                    <li><a class="scroll" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="site-main">
-
-        <section class="hero text-centered full-width"> 
-            <h1>About Us</h1>
-            <p>This is a sub page example with a hero at top and stacked sections below.</p>
+        <section class="hero text-centered">
+            <div class="container"> 
+                <h2>This is the Hero&nbsp;Section</h2>
+                <p>This is the hero section on the top of a single page website</p>
+                <a href="#about" class="button scroll">Learn More About Us</a>
+                <a href="#contact" class="button alt scroll">Get In Touch</a>  
+            </div>
         </section>
 
-        <section class="container">
+        <section>
             <div class="container">
+                <div class="row">
+                    <div class="column one-third">
+                        <img src="img/placeholder-1x1.gif" alt="Square 1x1 Placeholder Image" width="1500" height="1500"/>
+                        <h3>Heading 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sit alias rem. Facere corrupti obcaecati ipsum molestias quod commodi in.</p>
+                        <a href="#" class="button">Button</a>
+                    </div>
+                    <div class="column one-third">
+                        <img src="img/placeholder-1x1.gif" alt="Square 1x1 Placeholder Image" width="1500" height="1500"/>
+                        <h3>Heading 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sit alias rem. Facere corrupti obcaecati ipsum molestias quod commodi in.</p>
+                        <a href="#" class="button">Button</a>
+                    </div>
+                    <div class="column one-third">
+                        <img src="img/placeholder-1x1.gif" alt="Square 1x1 Placeholder Image" width="1500" height="1500"/>
+                        <h3>Heading 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sit alias rem. Facere corrupti obcaecati ipsum molestias quod commodi in.</p>
+                        <a href="#" class="button">Button</a>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <section id="about">
+            <div class="container">
+                <h3 class="section-title">About Us</h3>
                 <article>
                     <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
 
@@ -110,23 +137,46 @@
                     </p>
                 </article>
             </div>
+
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h3 class="section-title">Contact Us</h3>
+                <form>
+                    <label for="contact_name">Name:</label>
+                    <input type="text" id="contact_name" name="contact_name" />
+    
+                    <label for="email">Email Address:</label>
+                    <input type="text" id="contact_email" name="contact_email" />
+    
+                    <label for="contact_message">Message:</label>
+                    <textarea id="contact_message" name="contact_message"></textarea>
+    
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+
         </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer sticky">
         <div class="container">
             <nav class="site-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <ul class="nav group">
+                    <li><a class="scroll" href="#top">Home</a></li>
+                    <li><a class="scroll" href="#about">About</a></li>
+                    <li><a class="scroll" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </footer>
 
+        <!-- SCROLL JS FILE -->
+        <script src="js/scroll.js"></script>
+
         <!-- MAIN JS FILE -->
-     <script src="js/script.js"></script>
+        <script src="js/script.js"></script>
 
 </body>
 </html>
