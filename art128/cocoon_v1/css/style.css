@@ -683,9 +683,10 @@ h4 {
     padding: 1em 1.25em 0em 0.5em;
 }
 
-#blog p {
-    text-align: left;
-    padding: 1em 1.25em 0em 0.5em;
+.read a {
+    float: left;
+    padding-left: 0.6em;
+
 }
 
 #blog h2 {
@@ -721,7 +722,7 @@ h4 {
 }
 
 #site-footer {
-    max-width: 1025px;
+    max-width: 1075px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
