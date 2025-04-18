@@ -80,13 +80,13 @@ p {
 
 /* LINKS */
 a {
-    color: rgba(0,0,153,.7);
+    color: rgba(188,173,150,.7);
     text-decoration: none;
 }
 
 a:hover {
-    color: rgba(0,0,153,1);
-    text-decoration: underline;
+    color: rgba(188,173,150);
+    text-decoration: none;
 }
 
 /* HELPER CLASSES */
@@ -351,7 +351,7 @@ body.demo::before {
 /* STYLING FOR BOTH SITE HEADER AND FOOTER */
 .site-header a,
 .site-footer a {
-    color: rgba(219,208,206,.8);;
+    color: rgba(219,208,206,.8);
 }
 
 .site-header a:hover,
@@ -509,10 +509,6 @@ section {
     text-align: right;
 }
 
-.row p {
-    margin-left: 0;
-}
-
 /* TOGGLE NAV */
 @media (max-width: 767px) {
     .site-header {
@@ -648,9 +644,6 @@ blockquote {
     margin: 4em 2em 4em 2em;
 }
 
-.site-footer {
-    margin-top: 5em;
-}
 
 /* 
 article p:first-of-type {
@@ -675,49 +668,47 @@ form {
     margin: 0 auto;
 }
 
-form label,
-form input,
-form textarea {
+/* form label, */
+form input {
+/* form textarea { */
     box-sizing: border-box;
     display: block;
     width: 100%;
 }
 
-form label {
+/* form label {
     margin-top: 1.5em;
     margin-bottom: 0.3em;
-}
+} */
 
-form input[type="text"],
-form textarea {
+form input[type="text"] {
     border: 0px;
-    padding: .8em;
-    color: #666;
+    padding: .5em;
+    color: rgba(219,218,206,.8);
+    background-color: transparent;
 }
 
-form textarea {
+/* form textarea {
     min-height: 15em;
     font-size: 87.5%;
     line-height: 1.5;
-}
-
+} */
+/* 
 form input[type="submit"] {
     margin-top: 1.5em;
     width: auto;
-}
+} */
 
 /* CUSTOM SITE CSS */
 .section-title {
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .section-title::after {
     content: "";
     display: block;
     width: 100px;
-    margin: .5em auto;
-    border-bottom: 3px solid rgba(0,0,0,.2);
 }
 
 /* Vertical Media Query add height/padding to bottom of contact section only for large screen - crredit to Romina for this idea */
@@ -801,9 +792,11 @@ h4 {
 .container-quote h2 {
     text-align: center;
     color: rgba(77,71,45,1);
+    padding: .5em;
 }
 
-.column.one-third {
+.column.one-third, 
+.column.two-thirds {
     padding-left: auto;
 }
 
@@ -826,10 +819,19 @@ h4 {
 }
 
 #site-footer {
-    max-width: 1000px;
+    max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
+    padding: 1.5em 0 1em 0;
+    background-color: rgba(76,69,42);
+}
+
+#site-footer h4 {
+    color: rgba(219,218,206);
+}
+
+#site-footer ul, p {
+    color: rgba(188,173,150);
 }
 
 @media (max-width: 768px) {
@@ -861,3 +863,12 @@ h4 {
         padding-right: 3em;
     }
     }
+    
+#blog .row {
+    padding-left: 1.5em;
+    padding-right: auto;
+}
+
+#blog .verticalLine {
+    z-index: .5em;
+}
