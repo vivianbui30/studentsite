@@ -155,7 +155,7 @@ primary {
 
 /* COURSES SECTION */
 .courses {
-    padding: 6em 1em;
+    padding: 12em 1em;
     display: grid;
     justify-content: center;
     background-color: rgb(236, 234, 250);

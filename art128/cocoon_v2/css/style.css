@@ -371,7 +371,7 @@ body.demo::before {
     font-style: normal;
     margin: 0;
     color: #999;
-    padding: 0.5em 0 0em 0;
+    padding: 0.5em 0 0 0;
 }
 
 /* SITE-NAV */
@@ -867,8 +867,4 @@ h4 {
 #blog .row {
     padding-left: 1.5em;
     padding-right: auto;
-}
-
-#blog .verticalLine {
-    z-index: .5em;
 }
