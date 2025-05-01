@@ -1,6 +1,6 @@
 /* GLOBAL RESET */
-* { box-sizing: border-box; }
-body { margin: 0; }
+* {box-sizing: border-box;}
+body {margin: 0;}
 
 /* GLOBAL COLORS */
 body {color: rgb(240, 231, 218);}
@@ -9,17 +9,18 @@ a:hover {color: rgba(255, 238, 168, 1);}
 
 /* GLOBAL TYPOGRAPHY */
 body {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 88.75%; /* 14px */
+    font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 100%; /* 16px */
     line-height: 1.4;
 }
 
 /* HEADER */
 header {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
 }
+
 header { 
-    background-color: rgb(176, 166, 233, .7);
+    background-color: #ffb773;
     color: rgb(240, 231, 218);
     padding: 1em;
     display: grid;
@@ -38,7 +39,7 @@ header a:hover {
 
 /* SITE ID */
 .site-id h1 {
-    margin: 0;
+    margin-left: .5em;
 }
 
 /* SITE NAV */
@@ -54,9 +55,9 @@ header a:hover {
 
 /* MAIN */
 main { 
-    background: rgb(236, 234, 250);
+    background: #FFF7ED;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(153, 115, 175, .4);
+    color: rgb(255, 183, 116, .7);
 }
 
 section {
@@ -67,6 +68,7 @@ section {
 footer {
     border-top: 1px solid rgba(0,0,0,.05);
     padding: 1em;
+    background-color: #fff6ed;
 }
 
 /* LAYOUT */
@@ -98,19 +100,19 @@ primary {
 }
 
 .primary a {
-    color: rgb(153, 115, 175, .4);
+    color: rgb(255, 183, 116, .6);
 }
 
 .primary a:hover {
-    color: rgb(153, 115, 175);
+    color: rgb(255, 183, 116);
 }
 
 .two-col-sidebar a {
-    color: rgb(153, 115, 175, .4);
+    color: rgb(255, 183, 116, .6);
 }
 
 .two-col-sidebar a:hover {
-    color: rgb(153, 115, 175);
+    color: rgb(255, 183, 116);
 }
 
 /* SOCIAL NAV */
@@ -127,20 +129,33 @@ primary {
     padding: 1em;
 }
 
+/* HERO STYLING */
+.hero .intro {
+    margin: 3em;
+    padding: 3em;
+    flex-basis: 30em;
+    background-image: url(../img/hero_card.png);
+    opacity: 90%;
+    background-size: cover;
+    border-radius: 1em;
+    box-shadow: 0 0 1em 0 #FFB774;
+}
+
 /* HERO SECTION */
 .hero {
     text-align: center;
-    background-color: rgba(176, 166, 233, 1);
-    color: rgb(240, 231, 218);
+    background-color: #FFF7ED;
+    color: rgb(255, 183, 116, .6);
     padding: 6em 1em;
 }
 
 .hero h2 {
-    font-size: 6em;
+    font-family:'DynaPuff','Gill Sans',sans-serif;
+    font-size: 5em;
     line-height: 1;
     text-transform: uppercase;
     margin: 0 auto;
-    color: rgb(255, 238, 168, 1);
+    color: rgb(255, 183, 116);
 }
 
 .hero p {
@@ -148,17 +163,15 @@ primary {
     margin: 1em auto;
 }
 
-.hero, .hero h2 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-    
-
 /* COURSES SECTION */
 .courses {
+    background-image: url(../img/background_2.jpg);
+    background-size: cover;
+    background-position: top;
     padding: 12em 1em;
     display: grid;
     justify-content: center;
-    background-color: rgb(236, 234, 250);
+    background-color: #fff6ed;
 }
 
 .courses ul {
@@ -168,44 +181,49 @@ primary {
 }
 
 .courses h3 {
+    font-family:'DynaPuff','Gill Sans',sans-serif;
     text-align: center;
-    color: rgb(153, 115, 175);
+    color: rgb(255, 183, 116);
     margin: 1em;
-    font-size: 150%;
-}
-
-.courses h3, .courses ul {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 200%;
 }
 
 .courses ul a {
-    color: rgb(153, 115, 175, .5);
+    color: rgb(255, 183, 116, .6);
 }
 
 .courses ul a:hover {
-    color: rgb(153, 115, 175);
+    color: rgb(255, 183, 116);
 }
-
+.courses .cards {
+    padding: 3em;
+    flex-basis: 30em;
+    background-size: cover;
+    border-radius: 1em;
+    box-shadow: 0 0 1em 0 #FFB774;
+}
 /* FOOTER */
 footer {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(236, 234, 250);
+    /* background-color: rgb(236, 234, 250); */
 }
 
 footer a {
-    color: rgb(153, 115, 175, .5);
+    color: rgb(255, 183, 116, .6);
 }
 
 footer a:hover {
-    color: rgb(153, 115, 175);
+    color: rgb(255, 183, 116);
 }
 
 /* STYLING FOR SUB PAGES */
 .page-sub .hero {
-    background-color: rgb(176, 166, 233, .5);
-    color: rgb(244, 236, 241);
+    background-color: #FFF7ED;
+    color: rgb(255, 183, 116, .6);
 }
-
+.page-sub .coursework {
+    background-color: #FFF7ED;
+}
 /* COURSEWORK SECTION */
 .coursework {
     padding: 6em 1em;
@@ -213,26 +231,26 @@ footer a:hover {
     justify-content: center;
     flex-wrap: wrap;
     background-color: rgb(236, 234, 250);
-    color: rgb(153, 115, 175, .5);
+    color: rgb(255, 183, 116, .6);
 }
 
 .projects {
     margin: 2em;
-    color: rgb(143, 101, 168, .5);
+    color: rgb(255, 183, 116, .6);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .projects h3 {
-    color: rgb(153, 115, 175); 
+    color: rgb(255, 183, 116);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .projects a {
-    color: rgb(153, 115, 175, .4);
+    color: rgb(255, 183, 116, .6);
 }
 
 .projects a:hover {
-    color: rgb(153, 115, 175);
+    color: rgb(255, 183, 116);
 }
 
 /* CODE BLOCKS */
@@ -260,10 +278,17 @@ dt {
     font-weight: bold;
     margin-top: 1em;
 }
+
 dd {
     margin: 0;
 }
 
+.page-home .hero {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 13vh 4em;
+}
 /* FOR DEV PURPOSES */
 /* body * {
     background-color: rgba(0,0,0,.05) !important;
