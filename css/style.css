@@ -151,7 +151,7 @@ primary {
 
 .hero h2 {
     font-family:'DynaPuff','Gill Sans',sans-serif;
-    font-size: 5em;
+    font-size: 4em;
     line-height: 1;
     text-transform: uppercase;
     margin: 0 auto;
@@ -195,13 +195,17 @@ primary {
 .courses ul a:hover {
     color: rgb(255, 183, 116);
 }
+
 .courses .cards {
     padding: 3em;
     flex-basis: 30em;
     background-size: cover;
+    background-color: #FFF7ED;
+    opacity: 80%;
     border-radius: 1em;
     box-shadow: 0 0 1em 0 #FFB774;
 }
+
 /* FOOTER */
 footer {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
