@@ -178,14 +178,14 @@ form input[type="submit"] {
     font-size: inherit;
     font-family: "Livvic", sans-serif;
     line-height: 1.2;
-    background-color: rgba(77,71,45,.8);
-    border: 1px solid rgba(77,71,45,.8);
-    color: rgba(250,245,239,.8);
-    padding: 0.6em;
+    background-color: transparent;
+    border: 1px solid rgba(77,71,45,.7);
+    color: rgba(77,71,45,.7);
+    padding: 1em 1.5em;
     display: inline-block;
     margin: 1em 0em 0em 0em;
     text-align: center;
-    border-radius: .5em;
+    border-radius: 1.5em;
 }
 
 .button:hover,
@@ -373,9 +373,15 @@ body.demo::before {
 }
 
 /* SITE HEADER */
-.site-header {
-    padding: .5em 0 .5em .5em;
+.site-header .container {
+    max-width: none;
+    background-color: rgba(77,71,45,1);
 }
+
+/* .site-header {
+    padding: .5em 0 .5em .5em;
+    background-color: rgba(77,71,45,1);
+} */
 
 /* ON LARGER SCREEN LOGO GOES LEFT AND NAV GOES RIGHT */
 @media (min-width: 768px) {
@@ -526,7 +532,7 @@ section {
 
 /* HERO */
 .hero {
-    padding: 3em 4% 0 0;
+    padding: 0 4% 0 0;
     /* background-color: rgba(246,240,230,1); */
     text-align: right;
 }
@@ -622,21 +628,20 @@ section {
 } */
 
 /* STICKY HEADER - works with a class="sticky" on .site-header */
-.site-header.sticky {
+/* .site-header.sticky {
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 200;
-    background-color: rgba(77,71,45,1);
 }
 
 .site-header.sticky+.site-main {
     padding-top: 3em;
-}
+} */
 
 /* SITE-MAIN BACKGROUND */
 .site-main {
-    background-image: url(../img/background_3.jpg);
+    background-image: url(../img/background.jpg);
     background-repeat: repeat-x;
     background-size: auto 100%;
     background-position: center;
@@ -645,7 +650,7 @@ section {
 /* SECTIONS */
 .site-main .container {
     /* background-color: rgba(246, 240, 230, .2); */
-    padding: 3em 1em;
+    padding: 1em 1em;
 }
 
 /* SUB PAGES */
