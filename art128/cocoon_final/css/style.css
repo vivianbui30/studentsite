@@ -643,7 +643,7 @@ section {
 .site-main {
     background-image: url(../img/background.jpg);
     background-repeat: repeat-x;
-    background-size: auto 111%;
+    background-size: auto 120%;
     background-position: center;
 }
 
@@ -898,8 +898,8 @@ form input[type="submit"] {
 }
 
 #site-footer {
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     padding: 1em 0 1em 0;
     background-color: rgba(76,69,42);
     max-width: none;
