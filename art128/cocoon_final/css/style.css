@@ -641,9 +641,9 @@ section {
 
 /* SITE-MAIN BACKGROUND */
 .site-main {
-    background-image: url(../img/background.jpg);
+    background-image: url(../img/background_2.jpg);
     background-repeat: repeat-x;
-    background-size: auto 150%;
+    background-size: auto 100%;
     background-position: center;
 }
 
@@ -826,20 +826,20 @@ form input[type="submit"] {
 
     #products .beans {
         top: 0;
-        left: 0;
-        translate: -60% 0;
+        left: -210px;
+        translate: -50% 5%;
     }
 
     #products .pomelo {
         top: 0;
-        right: 0;
-        translate: 50% 0;
+        right: -220px;
+        translate: 35% -5%;
     }
 
     #products .turmeric {
         top: 0;
-        left: 0;
-        translate: -50% 0;
+        left: -210px;
+        translate: -35% -10%;
     }
 }
 
