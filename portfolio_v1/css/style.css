@@ -119,8 +119,8 @@ button {
     font-style: normal;
     font-variation-settings: "wdth" 100;
     line-height: 1.2;
-    background-color: rgba(0,0,255,1);
-    border: 1px solid rgba(0,0,255,1);
+    background-color: rgba(0,0,0,1);
+    border: 1px solid rgba(0,0,0,1);
     color: rgba(0 0 0 / 0.7);
     padding: 0.5em;
     display: inline-block;
@@ -131,8 +131,8 @@ button {
 
 .button:hover,
 button:hover {
-    background-color: rgba(0,0,153,1);
-    border-color: rgba(0,0,153,1);
+    background-color: rgba(0,0,0,1);
+    border-color: rgba(0,0,0,1);
     color: rgba(0 0 0 / 0.7);
     text-decoration: none;
 }
@@ -305,7 +305,7 @@ body.demo::before {
 .site-header .container {
     max-width: none;
     background-color: rgba(244, 244, 244, 1);
-    padding: .5em 1em;
+    padding: 1em 0em;
 }
 
 .gif {
@@ -343,6 +343,9 @@ body.demo::before {
 }
 
 /* SITE-NAV */
+.site-nav {
+    padding-right: 1em;
+}
 .site-nav ul {
     margin: 0;
     padding: 0;
@@ -356,9 +359,13 @@ body.demo::before {
     padding: 1em;
 }
 
+.site-nav .menu-button {
+    display: none;
+}
+
 /* SECTIONS */
 section {
-    padding: 3em 0;
+    padding: 1em 0;
 }
 
 /* HERO */
@@ -507,6 +514,7 @@ h3 a:hover {
 
 .site-main .container {
     padding: 2em;
+    padding-top: 0;
 }
 
 .caption .container {
@@ -659,4 +667,178 @@ img {
     animation: move-in ease-in-out; 
     animation-fill-mode: forwards;
     animation-duration: 1s;    
+}
+
+#intro .row-intro {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.row-intro {
+    display: flex;
+    padding: 0 3em;
+    margin: auto auto;
+}
+
+@media (min-width: 768px) {
+    .one-third.intro {
+        max-width: 29.3%;
+}
+}
+
+@media (min-width: 768px) {
+    .two-thirds.intro {
+        max-width: 66.6%;
+}
+}
+
+.row-intro>* {
+    flex-grow: 0;
+    padding: 2%;
+}
+
+.project-info {
+    margin-left: -2.5em;
+}
+
+ul li {
+    list-style: none;
+    padding: 0;
+}
+
+/* li {
+    margin-right: 0.25em;
+} */
+
+.caps,
+.two-thirds.intro h4 {
+    font-weight: 600;
+}
+
+hr {
+    width: 95%;
+    border: .75px solid lightgray;
+}
+
+@media (max-width: 768px) {
+    .one-third.greeting,
+    .one-third.education {
+        padding-top: 2px;
+    }
+}
+
+#contact {
+    padding: 0 0 8em 0;
+}
+
+@media (max-width: 768px) {
+    #contact {
+        padding: 0 2em 5em 2em;
+    }
+}
+
+/* TOGGLE NAV */
+
+@media (max-width: 767px) {
+    .site-nav {
+        padding-right: 0;
+    }
+    .toggle-nav .site-id {
+        position: absolute;
+    }
+    .site-header .container {
+        padding-bottom: 2.5em;
+    }
+    .toggle-nav .site-nav {
+        text-align: right;
+    }
+    .toggle-nav .site-nav .menu-button {
+        display: block;
+        display: inline-block;
+        cursor: pointer;
+        padding: 0.3em 0.8em;
+        border: 1px solid black;
+    }
+    .toggle-nav .site-nav .menu-button::selection {
+        background-color: rgba(255,255,255,0);
+    }
+    .toggle-nav .site-nav ul {
+        display: block;
+        text-align: center;
+    }
+    .toggle-nav .site-nav a:hover {
+        background-color: rgba(214,204,194);
+        color: white;
+    }
+    .toggle-nav[data-navstate="closed"] ul {
+        height: 0;
+        overflow: hidden;
+    }
+    .toggle-nav[data-navstate="open"] ul {
+        height: auto;
+        overflow: visible;
+    }
+}
+/* NAVICON */
+    .toggle-nav .site-nav .menu-button.navicon {
+        border: none;
+        color: rgba(255,255,255,.8);
+        padding: 1.5em;
+    }
+    .toggle-nav .site-nav .menu-button.navicon::after {
+        content: "\2630";
+        display: inline-block;
+        color: rgba(0,0,0,.8);
+        font-size: 1.75em;
+    }
+    .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
+        content: "\2715";
+    }
+
+.project-info li {
+    line-height: 1.5em;
+}
+
+.container .row-intro {
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+    .container .row-intro {
+        display: block;
+        padding: 0 0.5em 0.5em 0.5em;
+    }
+}
+
+.one-third.explore {
+    display: flex;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.one-third.final {
+    padding-top: 0;
+}
+
+/* .row-intro.final {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+} */
+ 
+.final-logo {
+    display: grid;
+    margin: 0;
+    padding: 3em 0 6em;
+    place-items: center;
+}
+
+.site-footer .container {
+    padding-bottom: 2em;
 }
