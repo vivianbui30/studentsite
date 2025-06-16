@@ -151,7 +151,7 @@ section {
     opacity: 90%;
     background-size: cover;
     border-radius: 1em;
-    box-shadow: 0 0 1em 0 #aaaaaa;
+    box-shadow: 0 0 1em 0 #ffffff;
 }
 
 /* HERO SECTION */
@@ -171,8 +171,10 @@ section {
 }
 
 .hero p {
-    max-width: 40em;
+    max-width: 35em;
     margin: 1.5em auto;
+    font-weight: 500;
+    color: rgba(244, 244, 244, .8);
 }
 
 /* COURSES SECTION */
@@ -302,10 +304,10 @@ dd {
 }
 
 .page-home .hero {
-    /* background-image: url(../img/background_img.jpg); */
+    background-image: url(../img/background_img.jpg);
     background-size: cover;
-    background-position: center;
-    padding: 10vh 3em;
+    background-position: bottom;
+    padding: 28vh 3em;
     background-color: rgba(244, 244, 244, 1);
 }
 
