@@ -784,7 +784,7 @@ hr {
 /* NAVICON */
     .toggle-nav .site-nav .menu-button.navicon {
         border: none;
-        color: rgba(255,255,255,.8);
+        color: rgba(244, 244, 244, 1);
         padding: 1.5em;
     }
     .toggle-nav .site-nav .menu-button.navicon::after {
@@ -829,16 +829,8 @@ hr {
     margin-left: auto;
     padding: 0;
     max-width: 100%;
-    height: auto;
-} */
- 
-.final-logo {
-    display: grid;
-    margin: 0;
-    padding: 3em 0 6em;
-    place-items: center;
-}
-
+    height: auto;} */
+     
 .site-footer .container {
     padding-bottom: 2em;
 }
