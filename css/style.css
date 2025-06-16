@@ -5,23 +5,25 @@ body {margin: 0;}
 /* GLOBAL COLORS */
 body {color: rgb(240, 231, 218);}
 a {color: rgb(255, 238, 168, 0.6);}
-a:hover {color: rgba(255, 238, 168, 1);}
+a:hover {color: rgba(141, 118, 91);}
 
 /* GLOBAL TYPOGRAPHY */
 body {
-    font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-size: 100%; /* 16px */
-    line-height: 1.4;
+    line-height: 1.3;
+    font-weight: 200;
+    color: rgba(0 0 0 / 0.7);
 }
 
 /* HEADER */
-header {
+/* header {
     font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
-}
+} */
 
 header { 
-    background-color: #ffb773;
-    color: rgb(240, 231, 218);
+    background-color: rgba(244, 244, 244, 1);
+    color: rgba(0,0,0,.5);
     padding: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -29,17 +31,23 @@ header {
 }
 
 header a {
-    color: rgb(255, 238, 168, .7);
+    color: rgba(0,0,0,.5);
     text-decoration: none;
 }
 
 header a:hover {
-    color: rgb(255, 238, 168, 1);
+    color: rgba(141, 118, 91);
 }
 
-/* SITE ID */
 .site-id h1 {
-    margin-left: .5em;
+    font-size: 1em;
+    margin: 0;
+}
+
+.site-header {
+    max-width: none;
+    background-color: rgba(244, 244, 244, 1);
+    padding: 1em;
 }
 
 /* SITE NAV */
@@ -52,12 +60,15 @@ header a:hover {
     display: block;
     padding: 1em;
 }
+.site-nav a:hover {
+    font-weight: 600;
+}
 
 /* MAIN */
 main { 
-    background: #FFF7ED;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(255, 183, 116, .7);
+    background: rgba(244, 244, 244, 1);
+    font-family: 'Quicksand', sans-serif;
+    color: rgba(0,0,0,.5);
 }
 
 section {
@@ -68,7 +79,7 @@ section {
 footer {
     border-top: 1px solid rgba(0,0,0,.05);
     padding: 1em;
-    background-color: #fff6ed;
+    background-color: rgba(244, 244, 244, 1);
 }
 
 /* LAYOUT */
@@ -91,28 +102,30 @@ section {
     }
 }
 
-aside {
+.aside {
     padding: 0 1em;
 }
 
-primary {
+.primary {
     padding: 0 1em;
 }
 
 .primary a {
-    color: rgb(255, 183, 116, .6);
+    color: rgba(0,0,0,.5);
 }
 
 .primary a:hover {
-    color: rgb(255, 183, 116);
+    color: rgba(141, 118, 91);
+    font-weight: 600;
 }
 
 .two-col-sidebar a {
-    color: rgb(255, 183, 116, .6);
+    color: rgba(0,0,0,.5);
 }
 
 .two-col-sidebar a:hover {
-    color: rgb(255, 183, 116);
+    color: rgba(141, 118, 91);
+    font-weight: 600;
 }
 
 /* SOCIAL NAV */
@@ -131,47 +144,46 @@ primary {
 
 /* HERO STYLING */
 .hero .intro {
-    margin: 3em;
-    padding: 3em;
+    /* margin: 3em; */
+    padding: 3em 1.5em 3em 1.5em;
     flex-basis: 30em;
-    background-image: url(../img/hero_card.png);
+    /* background-image: url(../img/hero_card.png); */
     opacity: 90%;
     background-size: cover;
     border-radius: 1em;
-    box-shadow: 0 0 1em 0 #FFB774;
+    box-shadow: 0 0 1em 0 #aaaaaa;
 }
 
 /* HERO SECTION */
 .hero {
     text-align: center;
     background-color: #FFF7ED;
-    color: rgb(255, 183, 116, .6);
-    padding: 6em 1em;
+    color: rgba(0,0,0,.5);
+    padding: 10em 1em;
 }
 
 .hero h2 {
-    font-family:'DynaPuff','Gill Sans',sans-serif;
+    font-family: "Prata", serif;
     font-size: 4em;
-    line-height: 1;
-    text-transform: uppercase;
+    line-height: 1.2em;
     margin: 0 auto;
-    color: rgb(255, 183, 116);
+    color: rgba(0,0,0,.5);
 }
 
 .hero p {
-    max-width: 30em;
-    margin: 1em auto;
+    max-width: 40em;
+    margin: 1.5em auto;
 }
 
 /* COURSES SECTION */
 .courses {
-    background-image: url(../img/background_2.jpg);
+    /* background-image: url(../img/hero_card.jpg); */
     background-size: cover;
     background-position: top;
     padding: 12em 1em;
     display: grid;
     justify-content: center;
-    background-color: #fff6ed;
+    background-color: rgba(244, 244, 244, 1);
 }
 
 .courses ul {
@@ -181,52 +193,55 @@ primary {
 }
 
 .courses h3 {
-    font-family:'DynaPuff','Gill Sans',sans-serif;
+    font-family: "Prata", serif;
     text-align: center;
-    color: rgb(255, 183, 116);
+    color: rgba(0,0,0,.5);
     margin: 1em;
     font-size: 200%;
 }
 
 .courses ul a {
-    color: rgb(255, 183, 116, .6);
+    color: rgba(141, 118, 91, .7);
+    text-decoration: none;
 }
 
 .courses ul a:hover {
-    color: rgb(255, 183, 116);
+    color: rgba(141, 118, 91);
+    font-weight: 600;
 }
 
 .courses .cards {
     padding: 3em;
     flex-basis: 30em;
     background-size: cover;
-    background-color: #FFF7ED;
-    opacity: 80%;
+    background-color: rgba(244, 244, 244, 1);
+    opacity: 50%;
     border-radius: 1em;
-    box-shadow: 0 0 1em 0 #FFB774;
+    box-shadow: 0 0 1em 0 #aaaaaa;
 }
 
 /* FOOTER */
 footer {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     /* background-color: rgb(236, 234, 250); */
 }
 
 footer a {
-    color: rgb(255, 183, 116, .6);
+    color: rgba(0,0,0,.5);
 }
 
 footer a:hover {
-    color: rgb(255, 183, 116);
+    color: rgba(141, 118, 91);
+    font-weight: 600;
 }
 
 /* STYLING FOR SUB PAGES */
 .page-sub .hero {
-    background-color: #FFF7ED;
-    color: rgb(255, 183, 116, .6);
+    background-color: rgba(244, 244, 244, 1);
+    color: rgba(0,0,0,.5);
 }
 .page-sub .coursework {
-    background-color: #FFF7ED;
+    background-color: rgba(244, 244, 244, 1);
 }
 /* COURSEWORK SECTION */
 .coursework {
@@ -234,27 +249,28 @@ footer a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(236, 234, 250);
-    color: rgb(255, 183, 116, .6);
+    background-color: rgba(244, 244, 244, 1);
+    color: rgba(0,0,0,.5);
 }
 
 .projects {
     margin: 2em;
-    color: rgb(255, 183, 116, .6);
+    color: rgba(0,0,0,.5);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .projects h3 {
-    color: rgb(255, 183, 116);
+    color: rgba(0,0,0,.5);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .projects a {
-    color: rgb(255, 183, 116, .6);
+    color: rgba(0,0,0,.5);
 }
 
 .projects a:hover {
-    color: rgb(255, 183, 116);
+    color: rgba(141, 118, 91);
+    font-weight: 600;
 }
 
 /* CODE BLOCKS */
@@ -288,11 +304,14 @@ dd {
 }
 
 .page-home .hero {
-    background-image: url(../img/background.jpg);
+    /* background-image: url(../img/background_img.jpg); */
     background-size: cover;
     background-position: center;
-    padding: 13vh 4em;
+    padding: 28vh 3em;
+    background-color: rgba(244, 244, 244, 1);
 }
+
+
 /* FOR DEV PURPOSES */
 /* body * {
     background-color: rgba(0,0,0,.05) !important;
