@@ -883,21 +883,21 @@ form input[type="submit"] {
     text-align: left;
 }
 
-#site-footer .column.one-third ul {
+.site-footer .column.one-third ul {
     list-style: none;
     text-align: left;
     padding: 0;   
 }
 
-#site-footer .column.two-thirds {
+.site-footer .column.two-thirds {
     text-align: left;
 }
 
-#site-footer .column.two-thirds {
+.site-footer .column.two-thirds {
     text-align: left;
 }
 
-#site-footer {
+.site-footer {
     /* margin-left: auto;
     margin-right: auto; */
     padding: 1em 0 1em 0;
@@ -905,17 +905,17 @@ form input[type="submit"] {
     max-width: none;
 }
 
-#site-footer h4 {
+.site-footer h4 {
     color: rgba(219,218,206);
 }
 
-#site-footer ul {
+.site-footer ul {
     color: rgba(188,173,150);
 }
 
 @media (max-width: 767px) {
 
-    #site-footer .column.one-third, .column.two-thirds {
+    .site-footer .column.one-third, .column.two-thirds {
         padding: 2em;
     }
 }
@@ -943,4 +943,51 @@ h1 {
 .search-icon, .cart {
     font-size: 16px;
     color: rgba(219,208,206,.8);
+}
+
+/* ON SCROLL: MOVE IN FROM LEFT */
+.nma-onscroll-movein-fromleft {
+    animation: nma-movein-fromleft both linear;
+    animation-timeline: view();
+    animation-range: entry 0% contain 50%;
+  }
+  @keyframes nma-movein-fromleft {
+    0% { translate: 50px; opacity: 0; }
+    100% { translate: 0; opacity: 1; }
+  }
+  
+  /* ON SCROLL: MOVE IN FROM RIGHT */
+  .nma-onscroll-movein-fromright {
+    animation: nma-movein-fromright both linear;
+    animation-timeline: view();
+    animation-range: entry 0% contain 50%;
+  }
+  @keyframes nma-movein-fromright {
+    0% { translate: -50px; opacity: 0; }
+    100% { translate: 0; opacity: 1; }
+  }
+  
+  /* ON SCROLL: FADE IN */
+.nma-onscroll-fadein {
+    animation: nma-fade-in both linear;
+    animation-timeline: view();
+    animation-range: entry 0% contain 50%;
+  }
+  
+  @keyframes nma-fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+  @keyframes move-in {  
+    from { transform:translate(0,-10px); opacity: 0; } 
+    to { transform:translate(0,0); opacity: 1; } 
+  }
+
+.site-main, .site-header, .site-footer {
+    opacity: 0; 
+    animation: move-in ease-in-out; 
+    animation-fill-mode: forwards;
+    animation-duration: 1s;    
 }

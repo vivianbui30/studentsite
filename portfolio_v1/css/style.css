@@ -381,7 +381,7 @@ section {
 
 .hero h2, p {
     max-width: 500px;
-    margin-left: auto;
+    /* margin-left: auto; */
     margin-right: auto;
 }
 
@@ -833,4 +833,14 @@ hr {
      
 .site-footer .container {
     padding-bottom: 2em;
+}
+
+.one-half.process {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.one-half.process h4 {
+    text-align: center;
 }
