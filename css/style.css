@@ -178,7 +178,6 @@ section {
 
 /* COURSES SECTION */
 .courses {
-    /* background-image: url(../img/hero_card.jpg); */
     background-size: cover;
     background-position: top;
     padding: 3em 1em 12em 1em;
@@ -303,11 +302,11 @@ dd {
 }
 
 .page-home .hero {
-    background-image: url(../img/background_img.jpg);
+    background-image: url(../img/hero.jpg);
     background-size: cover;
     background-position: bottom;
     padding: 27vh 3em;
-    /* background-color: rgba(244, 244, 244, 0.1); */
+    background-color: rgba(244, 244, 244, 0.1);
 }
 
 
