@@ -146,9 +146,9 @@ section {
 .hero .intro {
     /* margin: 3em; */
     padding: 3em 1.5em 3em 1.5em;
+    background-color: transparent;
     flex-basis: 30em;
     opacity: 100%;
-    background-size: cover;
     border-radius: 1em;
     box-shadow: 0 0 1em 0 #ffffff;
 }
@@ -156,7 +156,7 @@ section {
 /* HERO SECTION */
 .hero {
     text-align: center;
-    background-color: #FFF7ED;
+    background-color: transparent;
     color: rgba(28, 35, 45, .5);
     padding: 10em 1em;
 }
@@ -306,7 +306,7 @@ dd {
     background-size: cover;
     background-position: bottom;
     padding: 27vh 3em;
-    background-color: rgba(244, 244, 244, 0.1);
+    background-color: rgba(244, 244, 244, 1);
 }
 
 
