@@ -147,8 +147,7 @@ section {
     /* margin: 3em; */
     padding: 3em 1.5em 3em 1.5em;
     flex-basis: 30em;
-    /* background-image: url(../img/hero_card.png); */
-    opacity: 90%;
+    opacity: 100%;
     background-size: cover;
     border-radius: 1em;
     box-shadow: 0 0 1em 0 #ffffff;
@@ -308,7 +307,7 @@ dd {
     background-size: cover;
     background-position: bottom;
     padding: 27vh 3em;
-    background-color: rgba(244, 244, 244, 1);
+    /* background-color: rgba(244, 244, 244, 0.1); */
 }
 
 
