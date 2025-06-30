@@ -408,7 +408,7 @@ section {
 .site-footer .container {
     background-color: rgba(244, 244, 244, 1);
     max-width: none;
-    padding: 1em;
+    padding: 1em 0 1em 0;
 }
 
 .button,
@@ -730,8 +730,9 @@ ul li {
 }
 
 hr {
-    width: 95%;
+    width: 150%;
     border: .75px solid lightgray;
+    translate: -20%;
 }
 
 @media (max-width: 768px) {
