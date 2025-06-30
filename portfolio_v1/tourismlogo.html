@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>Site Name | Contact Us</title>
+    <title>Istanbul</title>
     <meta name="description" content="This is a starter HTML + CSS + JS boilerplate set of code for website projects."/>
 
     <!-- FOR MOBILE / SMALL SCREENS -->
@@ -12,18 +12,21 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 <body>
-    <header class="site-header">
+    <header class="site-header toggle-nav" data-navstate="closed">
         <div class="container">
             <div class="site-id">
                 <h1><a href="index.html"><img src="img/logo.png" alt="Name" width="72" height="72"/></a></h1>
             </div>
             <nav class="site-nav">
+                <div class="menu-button navicon">Menu</div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="works.html">Works</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
@@ -36,8 +39,8 @@
             <div class="container">
                 <div class="row-main">
                     <div class="two-thirds column">
-                        <h1>Projects</h1>
-                        <h3>Branding, Web Design, Animation, & More</h3>
+                        <h1>Istanbul</h1>
+                        <h3>Tourism Logo Redesign</h3>
                     </div>
                 </div>
             </div>
@@ -48,49 +51,82 @@
             <div class="subcontainer withgap">
                 <div class="row-sub">
                     <div class="full-width-wrapper">
-                        <img src="img/webdesign.jpg" alt="A screen of Cocoon web design" width="2250" height="1485" class="full-width"/>
-                    </div>
-                </div>
-                <div class="row-sub">
-                    <div class="half-width-wrapper p-top">
-                        <img src="img/tourism_logo.jpg" width="745" height="745"/>
-                    </div>
-                    <div class="half-width-wrapper p-top">
-                        <img src="img/corporate_logo.jpg" width="745" height="745"/>
-                    </div>  
-                </div>
-                <div class="row-sub">
-                    <div class="full-width-wrapper">
-                        <img src="img/booktrilogy_landscape.jpg" width="3500" height="2450"/>
-                    </div>
-                </div>
-                <div class="row-sub">
-                    <div class="half-width-wrapper p-top">
-                        <img src="img/motiongraphic.jpg" width="745" height="745"/>
-                    </div>
-                    <div class="half-width-wrapper p-top">
-                        <img src="img/editorial_homepage.jpg" width="745" height="745"/>
+                        <img src="img/istanbul_city.jpg" alt="An Istanbul city logo on an image of Istanbul city" width="3000" height="2000" class="full-width"/>
                     </div>
                 </div>
             </div>
-                
         </section>
-        <section id="contact">
-            <div class="column one-third">
-                <form>
-                    <h3>Any questions? Send me a message!</h3>
-                    <label for="contact_name">Name:</label>
-                    <input type="text" id="contact_name" name="contact_name" />
-        
-                    <label for="email">Email Address:</label>
-                    <input type="text" id="contact_email" name="contact_email" />
-        
-                    <label for="contact_message">Message:</label>
-                    <textarea id="contact_message" name="contact_message"></textarea>
-        
-                    <input type="submit" value="Get in touch" />
-                </form>
-            </div>  
+
+        <section id="intro">
+            <div class="container">
+                <div class="row-intro">
+                    <div class="column one-third intro">
+                        <ul class="project-info">
+                            <li><strong class="caps">CLIENT: </strong>College</li>
+                            <li><strong class="caps">PROJECT TYPE: </strong>Logo Redesign</li> 
+                            <li><strong class="caps">COMPETENCIES: </strong>Illustration, Iconography</li>                     
+                            <li><strong class="caps">SOFTWARE: </strong>Illustrator, Photoshop</li>
+                        </ul>
+                    </div>
+                    <div class="column two-thirds intro">
+                        <h3>Tourism Logo: <em>ISTANBUL</em></h3>
+                        <h4>The Challenge</h4>
+                        <p>For this project, I was tasked to design a city logo to represent the city's unique blend of history, culture, and natural beauty. The challenge is to create a logo which combines both complexity and simplicity, memorable, also resonates with locals and extends a warm welcome, hospitable greeting to visitors. </p>
+                        <h4>The Solution</h4>
+                        <p>After researching about the city, I found out Istanbul is rich in history and culture, and also the presence of the cats in the city is part of what makes Istanbul unique. So I decided to blend the cat symbol with the city’s ancient art history to craft Istanbul’s tourism logo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr></hr>
+
+        <section id="process">
+            <div class="container">
+                <div class="row-intro">
+                    <h3>BRAINSTORM & SKETCHES</h3>
+                </div>
+                <div class="row-intro">
+                    <h3>DIGITALIZE</h3>
+                </div>
+                <div class="row-intro">
+                    <img src="img/tourismlogo_digital.png" width="1512" height="889"/>
+                </div>
+                <div class="row-intro">
+                    <h3>EXPLORATION</h3>
+                </div>
+                <div class="row-intro">
+                    <div class="column one-third final">
+                        <img src="img/tourismlogo_v1.png" width="500" height="500"/>
+                        <p>Istanbul is famous for its impressive domes, for its rich and diverse art history. We can easily recognize the architecture  on the doors or windows at most domes in Istanbul. Inspired by that, I incorporated the mosque floor plan with Islamic pattern.</p>
+                    </div>
+                    <div class="column one-third final">
+                        <img src="img/tourismlogo_v2.png" width="500" height="500"/>
+                        <p>This concept was inspired by  Shahmaran - a mythical half-woman and half-snake figure. The complexity in Shahmaran mythical form, moral narrative, and symbolic richness,  much like Istanbul, which is a melting pot of diverse cultures and traditions.</p>
+                    </div>
+                    <div class="column one-third final">
+                        <img src="img/tourismlogo_v3.png" width="500" height="500"/>
+                        <p>Istanbul is often referred to “Catstanbul”, cats are deeply integrated into Istanbul’s culture and locals’ daily life. I decided to add ‘Turkish taste’ to the cat by blending  the Ottoman design into the cat symbol which could elevate the logo.</p>
+                    </div>
+                </div>
+                
+                <div class="row-intro">
+                    <h3>FINAL</h3>
+                </div>
+                <section id="final">
+                    <div class="container">
+                        <div class="row-intro">
+                            <img src="img/tourismlogo_bag.jpg" width="1500" height="1000"/>
+                        </div>
+                        <div class="row-intro">
+                            <img src="img/tourismlogo_shirt.png" width="1500" height="2000"/>
+                        </div>
+                        <div class="row-intro">
+                            <img src="img/tourismlogo_postcard.jpg" width="1500" height="1000"/>
+                        </div>
+                    </div>
+                </section>
+            <hr></hr>
         </section>
     </main>
 
@@ -107,7 +143,7 @@
     </footer>
 
         <!-- MAIN JS FILE -->
-     <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>

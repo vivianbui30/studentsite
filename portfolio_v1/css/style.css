@@ -845,6 +845,7 @@ hr {
 
 .one-half.process h4 {
     text-align: center;
+    margin-bottom: 1em;
 }
 
 .row-intro.code,
@@ -857,9 +858,17 @@ hr {
 
 .one-half.process,
 .row-intro.sitemap {
-    filter: drop-shadow(5px 5px 7px lightgray);
+    filter: drop-shadow(1px 1px 3px lightgray);
 }
 
+#works .row-intro,
+#final .row-intro {
+    filter: drop-shadow(1px 1px 3px lightgray);
+}
+
+#process .row-intro {
+    filter: drop-shadow(1px 1px 3px lightgray);
+}
 .live {
     font-size: inherit;
     font-family: "Quicksand", sans-serif;
@@ -876,7 +885,6 @@ hr {
     text-align: center;
     border-radius: 2em;
     margin: 0 auto;
-    
 }
 
 .live:hover {
@@ -885,4 +893,10 @@ hr {
     color: white;
     text-decoration: none;
     font-weight: 200;
+}
+
+@media (max-width: 767px) {
+    .live {
+        margin-left: 9.3em;
+    }
 }
