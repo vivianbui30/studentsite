@@ -897,6 +897,8 @@ hr {
 
 @media (max-width: 767px) {
     .live {
-        margin-left: 8em;
+        display: block;
+        margin: 0 auto;
+        width: 220px;
     }
 }
