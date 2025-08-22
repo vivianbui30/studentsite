@@ -78,7 +78,7 @@ section {
 /* FOOTER */
 footer {
     border-top: 1px solid rgba(0,0,0,.05);
-    padding: 1em;
+    padding: 3em;
     background-color: rgba(244, 244, 244, 1);
 }
 
@@ -200,24 +200,40 @@ section {
     font-size: 200%;
 }
 
-.courses ul a {
-    color: rgba(28, 35, 45, .7);
-    text-decoration: none;
-}
-
-.courses ul a:hover {
-    color: rgba(28, 35, 45);
-    font-weight: 600;
-}
-
 .courses .cards {
-    padding: 3em;
-    flex-basis: 30em;
-    background-size: cover;
-    background-color: rgba(244, 244, 244, 1);
-    opacity: 50%;
-    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 3em;
+    flex-wrap: wrap;
+    padding: 3em 0;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+.courses .cards li {
+    min-width: 30%;
+}
+
+.courses .cards a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 0.875em;
+    padding: 4em 2em;
+    text-decoration: none;
     box-shadow: 0 0 1em 0 #aaaaaa;
+}
+
+.courses .cards a:hover {
+    background-color: grey;
+    color: white;
+}
+
+.courses .cards span {
+    display: block;
+    font-size: 1.25em;
+    font-weight: 500;
 }
 
 /* FOOTER */
