@@ -56,10 +56,12 @@ header a:hover {
     justify-content: flex-end;
     list-style: none;
 }
+
 .site-nav a {
     display: block;
     padding: 1em;
 }
+
 .site-nav a:hover {
     font-weight: 600;
 }
@@ -256,9 +258,11 @@ footer a:hover {
     background-color: rgba(244, 244, 244, 1);
     color: rgba(28, 35, 45,.5);
 }
+
 .page-sub .coursework {
     background-color: rgba(244, 244, 244, 1);
 }
+
 /* COURSEWORK SECTION */
 .coursework {
     padding: 3em 1em;
@@ -308,7 +312,6 @@ footer a:hover {
     color: rgba(28, 35, 45);
     font-weight: 500;
 }
-
 
 /* CODE BLOCKS */
 
