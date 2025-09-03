@@ -427,14 +427,14 @@ form input[type="submit"] {
     font-family: "neulis-sans", sans-serif;
     font-weight: 200;
     max-width: 150px;
-    margin: 0 auto;
+    margin: 3em .5em 0 0;
     display: block;
-    /* float: right; */
+    float: left;
 }
 
 @media (max-width: 767px) {
     .button, button, form input[type="submit"] {
-        margin: 0 auto;
+        margin: 1em .5em auto 0;
         display: block;
     }
 }
@@ -525,7 +525,7 @@ h3 a:hover {
 }
 
 .site-main .container {
-    padding: 2em 2em 0 2em;
+    padding: 2em 2em 2em 2em;
     padding-top: 0;
 }
 
@@ -738,7 +738,8 @@ hr {
 @media (max-width: 768px) {
     .one-third.greeting,
     .one-third.education {
-        padding-top: 2px;
+        padding-top: 1em;
+        padding-bottom: 2em;
     }
 }
 
