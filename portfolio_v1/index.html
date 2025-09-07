@@ -19,54 +19,95 @@
     <header class="site-header toggle-nav" data-navstate="closed">
         <div class="container">
             <div class="site-id">
-                <h1><a href="index.html"><img src="img/logo.png" alt="Name" width="72" height="72"/></a></h1>
+                <h1><a class="scroll" href=#top><img src="img/logo.png" alt="Name" width="72" height="72"/></a></h1>
             </div>
             <nav class="site-nav">
                 <div class="menu-button navicon">Menu</div>
                 <ul>
-                    <li><a href="works.html">Works</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a class="scroll" href=#works>Works</a></li>
+                    <li><a class="scroll" href=#about>About</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="site-main">
-        <section id="hero" class="hero">
-                <h1><img src="img/welcomegif.gif" width="1920" height="700"/></h1>
+        <section id="hero" class="fadeandscaleIn hero">
+            <div>
+                <h1>When <strong>Creativity</strong> meets <strong>Reality.</strong></h1>
+            </div>
         </section>
         <section>
-            <div class="caption">
+            <div class="nma-onscroll-fadein caption">
                 <div class="container">
-                    <h1>Where Creativity meets Reality.</h1>
-                    <h4>View all of my works <a href="works.html">here.</a></h4>
+                    <h2>Projects</h2>
+                    <h3>Branding, Website Design, Animation & More</h3>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="column one-third">
-                        <a href="tourismlogo.html"><img src="img/tourism_logo.jpg" alt="Image of a side-faced cat incorporated with Ottoman design" width="1500" height="1500"/></a>
-                    </div>
-                    <div class="column one-third">
-                        <a href="booktrilogy.html"><img src="img/booktrilogy.jpg" alt="Image of three book covers" width="1500" height="1500"/></a>
-                    </div>
-                    <div class="column one-third">
-                        <a href="corporatelogo.html"><img src="img/corporate_logo.jpg" alt="Image of a ancient Vietnamese figure holding a coffee plant" width="1500" height="1500"/></a>
+        </section>
+        <section id="works">
+            <div class="subcontainer withgap">
+                <div class="row-sub">
+                    <div class="full-width-wrapper">
+                        <a href="cocoonwebsite.html"><img src="img/webdesign.jpg" alt="A screen of Cocoon web design" width="2250" height="1485" class="full-width"/></a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="column one-third">
-                        <a href="editorial.html"><img src="img/editorial_homepage.jpg" alt="Image of a Tiramisu recipe spread" width="1500" height="1500"/></a>
+                <div class="row-sub">
+                    <div class="half-width-wrapper p-top">
+                        <a href="tourismlogo.html"><img src="img/tourism_logo.jpg" width="745" height="745"/></a>
                     </div>
-                    <div class="column one-third">
-                        <a href="bouncingball.html"><img src="img/bouncingball.jpg" alt="Image of Kahuku Farm logo" width="1500" height="1500"/></a>
-                    </div>
-                    <div class="column one-third">
-                        <a href="cocoonwebsite.html"><img src="img/webdesign_homepage.jpg" alt="Image of a iMac screen with web design layout" width="1500" height="1500"/></a>
+                    <div class="half-width-wrapper p-top">
+                        <a href="corporatelogo.html"><img src="img/corporate_logo.jpg" width="745" height="745"/></a>
+                    </div>  
+                </div>
+                <div class="row-sub">
+                    <div class="full-width-wrapper">
+                        <a href="booktrilogy.html"><img src="img/booktrilogy_landscape.jpg" width="3500" height="2450"/></a>
                     </div>
                 </div>
-            </div>
-        </section> 
+                <div class="row-sub">
+                    <div class="half-width-wrapper p-top">
+                        <a href="bouncingball.html"><img src="img/bouncingball.jpg" width="745" height="745"/></a>
+                    </div>
+                    <div class="half-width-wrapper p-top">
+                        <a href="editorial.html"><img src="img/editorial_homepage.jpg" width="745" height="745"/></a>
+                    </div>
+                </div>
+            </div>  
+        </section>
+
+        <section id="about">
+            <div class="nma-onscroll-fadein row">
+                <div class="column one-half greeting ">
+                    <div class="container">
+                        <h3>About Me</h3>
+                        <p>I'm Vivian Bui, I was born and raised in Vietnam. I am currently an interface design student at Kapiolani Community College, Honolulu. With the knowledge and practical experience gained from projects during my studies, I hope to deliver products that are not only beautiful but also functional.</p>
+                        <p>I enjoy experimenting with different styles and techniques, always seeking to learn and grow in my craft. I’m excited to share my journey with you through my work!</p>
+                        <a href="../art298/portfolio.pdf">Resume</a>
+                        <a href="mailto:vivian30@hawaii.edu">Email Me!</a>
+                    </div>
+                </div>
+                <div class="column one-half education">
+                    <div class="container">
+                        <h3>Education</h3>
+                        <h4><em>Kapiolani Community College</em></h4>
+                        <h6>Associate in Science, New Media Arts</h6>
+                        <p>August 2024 - December 2026 (Expected Graduation)</p>
+                        <h6>Associate in Liberal Arts</h6>
+                        <p>August 2022 - December 2023</p>
+                    </div>
+                    <div class="container">
+                        <h3>Experience</h3>
+                        <h4><em>Teapresso Express</em></h4>
+                        <h6>Barista</h6>
+                        <p>Oct 2022 - Present</p>
+                        <h4><em>Teapresso Bar</em></h4>
+                        <h6>Store Manager</h6>
+                        <p>Aug 2017 - Mar 2020</p>
+                    </div>
+                </div>     
+        </section>
+    </main>
 
 
         <!-- <section id="contact">
@@ -102,14 +143,16 @@
         <div class="container">
             <nav class="site-nav">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="works.html">WORKS</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#top">HOME</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#about">ABOUT</a></li>
                 </ul>
             </nav>
         </div>
     </footer>
 
+        <!-- SCROLL JS FILE -->
+        <script src="js/scroll.js"></script>
         <!-- MAIN JS FILE -->
      <script src="js/script.js"></script>
 
