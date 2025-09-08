@@ -361,7 +361,7 @@ body.demo::before {
 
 /* SECTIONS */
 section {
-    padding: 0 1em 1em 1em;
+    padding: 2em 1em 1em 1em;
 }
 
 /* HERO */
@@ -528,7 +528,7 @@ h3 a:hover {
 }
 
 .site-main .container {
-    padding: 2em 2em 0 2em;
+    padding: 0 2em 0 2em;
 }
 
 .caption .container {
@@ -1084,4 +1084,8 @@ a {
 
 .content a:hover {
     color: rgba(214, 204, 194, 1);
+}
+
+#projects h3 {
+    color: rgba(0,0,0,.7);
 }
