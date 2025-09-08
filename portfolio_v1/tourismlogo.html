@@ -26,7 +26,6 @@
                 <div class="menu-button navicon">Menu</div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="works.html">Works</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
@@ -84,6 +83,53 @@
                 <div class="row-intro">
                     <h3>BRAINSTORM & SKETCHES</h3>
                 </div>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                    <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="img/sketch1.jpg" alt="Placeholder Image" width="504" height="672"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/sketch2.JPG" alt="Placeholder Image" width="504" height="672"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/sketch3.JPG" alt="Placeholder Image" width="504" height="672"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/sketch4.JPG" alt="Placeholder Image" width="504" height="672"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/sketch5.JPG" alt="Placeholder Image" width="504" height="672"/>
+                            </div>
+                        </div>
+                    <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                <!-- SWIPER JS - THIS GOES IN THE BOTTOM OF YOUR .HTML DOCUMENT INSIDE OF BODY-->
+                        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                <!-- SWIPER JS INIT - THIS GOES IN THE BOTTOM OF YOUR .HTML DOCUMENT INSIDE OF BODY AFTER SWIPER.JS -->
+                        <script>
+                            const swiper = new Swiper('.swiper', {
+                            // Optional parameters
+                            loop: true,
+                        
+                            // If we need pagination
+                            pagination: {
+                            el: '.swiper-pagination',
+                            },
+                        
+                            // Navigation arrows
+                            navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                            },
+                        });
+                        </script>
                 <div class="row-intro">
                     <h3>DIGITALIZE</h3>
                 </div>
