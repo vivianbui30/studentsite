@@ -370,7 +370,7 @@ section {
 }
 
 .site-main .hero {
-    padding: 10em 4%;
+    padding: 15em 4%;
     padding-bottom: 17em;
     /* background-color: rgba(237, 237, 233, .6); */
     text-align: center;
@@ -947,81 +947,20 @@ hr {
     opacity: 0;
 }
   
-  .fadeandscaleIn *:nth-child(1) { animation-delay: 0.25s;}
-  .fadeandscaleIn *:nth-child(2) { animation-delay: 0.5s;}
-  .fadeandscaleIn *:nth-child(3) { animation-delay: 0.75s;}
+  .fadeandscaleIn *:nth-child(1) { animation-delay: 1s;}
+  .fadeandscaleIn *:nth-child(2) { animation-delay: 1.25s;}
+  .fadeandscaleIn *:nth-child(3) { animation-delay: 1.5s;}
   
 /* ON SCROLL: FADE IN */
 .nma-onscroll-fadein {
     animation: nma-fade-in both linear;
     animation-timeline: view();
-    animation-range: entry 0% contain 50%;
+    animation-range: entry 0% contain 70%;
 }
   @keyframes nma-fade-in {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
-
-/* @media (min-width: 768px) {
-    .full-width-wrapper a {
-        display: block;
-        height: 190%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: grid;
-        place-items: left;
-    }}
-
-.full-width-wrapper a {
-    display: block;
-    height: 190%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: grid;
-    place-items: left;
-    text-align: left;
-}
-
-@media (min-width: 768px) {
-    .half-width-wrapper a {
-        display: block;
-        height: 190%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: grid;
-        place-items: center;
-    }}
-
-.half-width-wrapper a {
-    display: block;
-    height: 190%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 44%;
-    display: grid;
-    place-items: center;
-    text-align: center;
-}
-
-.corporate a {
-    width: 50%;
-}
-a {
-    color: white;
-    background-image: linear-gradient(to right, #7c9fab, #31505b 50%, #252525 50%);
-    background-size: 200% 100%;
-    background-position: -100%;
-    position: relative;
-    -webkit-background-clip: text;
-    transition: all 0.1s ease-in-out;
-} */
 
 .content {
     width: 100%;
