@@ -371,7 +371,7 @@ section {
 
 .site-main .hero {
     padding: 10em 4%;
-    padding-bottom: 15em;
+    padding-bottom: 17em;
     /* background-color: rgba(237, 237, 233, .6); */
     text-align: center;
 }
@@ -930,32 +930,6 @@ hr {
     font-size: 112.5%;
 }
 
-/* FADE AND DROP IN ANIMATION */
-@keyframes fadeanddropIn {
-    0% {
-      transform: translateY(-20px);
-      opacity: 0; 
-    }
-    100% {
-      transform: translateY(0px); 
-      opacity: 1; 
-    }
-}
-  
-  .fadeanddropIn * {
-    animation: fadeanddropIn 1s ease-out forwards;
-    opacity: 0;
-}
-  
-  .fadeanddropIn *:nth-child(1) { animation-delay: .5s;}
-  .fadeanddropIn *:nth-child(2) { animation-delay: .65s;}
-  .fadeanddropIn *:nth-child(3) { animation-delay: .8s;}
-  
-  .fadeanddropIn:last-child *:nth-child(1) { animation-delay: 1.5s;}
-  .fadeanddropIn:last-child *:nth-child(2) { animation-delay: 1.75s;}
-  .fadeanddropIn:last-child *:nth-child(3) { animation-delay: 2s;}
-
-
 /* FADE AND SCALE IN ANIMATION */
   @keyframes fadeandscaleIn {
     0% {
@@ -973,9 +947,9 @@ hr {
     opacity: 0;
 }
   
-  .fadeandscaleIn *:nth-child(1) { animation-delay: 1s;}
-  .fadeandscaleIn *:nth-child(2) { animation-delay: 1.25s;}
-  .fadeandscaleIn *:nth-child(3) { animation-delay: 1.5s;}
+  .fadeandscaleIn *:nth-child(1) { animation-delay: 0.25s;}
+  .fadeandscaleIn *:nth-child(2) { animation-delay: 0.5s;}
+  .fadeandscaleIn *:nth-child(3) { animation-delay: 0.75s;}
   
 /* ON SCROLL: FADE IN */
 .nma-onscroll-fadein {
