@@ -44,7 +44,7 @@ body {
 */
 
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     margin: 0.5em 0;  
 }
 h1 {
@@ -370,7 +370,7 @@ section {
 }
 
 .site-main .hero {
-    padding: 15em 4%;
+    padding: 12em 4%;
     padding-bottom: 17em;
     /* background-color: rgba(237, 237, 233, .6); */
     text-align: center;
