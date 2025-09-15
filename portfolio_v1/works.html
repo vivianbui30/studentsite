@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>My Works</title>
-    <meta name="description" content="This is a starter HTML + CSS + JS boilerplate set of code for website projects."/>
+    <title>Vivian Bui | Portfolio</title>
+    <meta name="description" content="SiteBase: a minimalistic HTML + CSS + JS base front-end framework for simple web site projects."/>
 
     <!-- FOR MOBILE / SMALL SCREENS -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -19,12 +19,12 @@
     <header class="site-header toggle-nav" data-navstate="closed">
         <div class="container">
             <div class="site-id">
-                <h1><a href="index.html"><img src="img/logo.png" alt="Name" width="72" height="72"/></a></h1>
+                <h1><a class="scroll" href=#top><img src="img/logo.png" alt="Name" width="72" height="72"/></a></h1>
             </div>
             <nav class="site-nav">
                 <div class="menu-button navicon">Menu</div>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a class="scroll" href=#works>Projects</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
@@ -32,85 +32,106 @@
     </header>
 
     <main class="site-main">
-
-        <section id="projects">
-            <div class="container">
-                <div class="row-main">
-                    <div class="two-thirds column">
-                        <h1>Projects</h1>
-                        <h3>Branding, Website Design, Animation & More</h3>
-                    </div>
+        <section id="hero" class="fadeandscaleIn hero">
+            <div>
+                <h1>Hello, I'm Vivian!</h1>
+                <h3>Welcome to my world, where I brought my creativity to reality.</h3>
+                <a href="about.html" class="button">About Me!</a>
+            </div>
+        </section>
+        <section>
+            <div class="fadeandscaleIn-caption">
+                <div class="container">
+                    <h2>Projects</h2>
+                    <h3>Logo, Website Design, Animation & More</h3>
                 </div>
             </div>
         </section>
 
         <section id="works">
             <div class="subcontainer withgap">
-                <div class="row-sub">
-                    <div class="half-width-wrapper p-top">
-                        <div class="image">
-                            <img src="../portfolio_v1/img/webdesign_homepage.jpg" alt="Cocoon Website Redesign" width="500" height="500">
-                            <div class="content">
-                                <h2>Website Redesign</h2>
-                                <h4>Cocoon Original Vietnam</h4>
-                                <a href="cocoonwebsite.html" class="button">See Details</a>
+                <div class="container">
+                    <div class="row-sub">
+                        <div class="half-width-wrapper p-top">
+                            <div class="image">
+                                <img src="../portfolio_v1/img/webdesign_homepage.jpg" alt="Cocoon Website Redesign" width="500" height="500">
+                                <div class="content">
+                                    <h2>Website Redesign</h2>
+                                    <h4>Cocoon Original Vietnam</h4>
+                                    <a href="cocoonwebsite.html" class="button">See Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="half-width-wrapper p-top">
-                        <div class="image">
-                            <img src="../portfolio_v1/img/booktrilogy.jpg" alt="Book Trilogy Design" width="500" height="500">
-                            <div class="content">
-                                <h2>Book Trilogy Design</h2>
-                                <h4><em>"This is Love"</em> by Phoebe Judge</h4>
-                                <a href="booktrilogy.html" class="button">See Details</a>
+                </div>
+                <div class="container">
+                    <div class="row-sub">
+                        <div class="half-width-wrapper p-top">
+                            <div class="image">
+                                <img src="../portfolio_v1/img/booktrilogy.jpg" alt="Book Trilogy Design" width="500" height="500">
+                                <div class="content">
+                                    <h2>Book Trilogy Design</h2>
+                                    <h4><em>"This is Love"</em> Podcast</h4>
+                                    <a href="booktrilogy.html" class="button">See Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row-sub">
-                    <div class="half-width-wrapper p-top">
-                        <div class="image">
-                            <img src="../portfolio_v1/img/tourism_logo.jpg" alt="Istanbul City Logo Design" width="500" height="500">
-                            <div class="content">
-                                <h2>Tourism Logo</h2>
-                                <h4>Istanbul</h4>
-                                <a href="tourismlogo.html" class="button">See Details</a>
+                <div class="container">
+                    <div class="row-sub">
+                        <div class="half-width-wrapper p-top">
+                            <div class="image">
+                                <img src="../portfolio_v1/img/tourism_logo.jpg" alt="Istanbul City Logo Design" width="500" height="500">
+                                <div class="content">
+                                    <h2>Tourism Logo</h2>
+                                    <h4>Istanbul City</h4>
+                                    <a href="tourismlogo.html" class="button">See Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="half-width-wrapper p-top">
-                        <div class="image">
-                            <img src="../portfolio_v1/img/corporate_logo.jpg" alt="Trung Nguyen Coffee Logo" width="500" height="500">
-                            <div class="content">
-                                <h2>Corporate Logo</h2>
-                                <h4>Trung Nguyen Coffee</h4>
-                                <a href="corporatelogo.html" class="button">See Details</a>
+                </div>
+                <div class="container">
+                    <div class="row-sub">
+                        <div class="half-width-wrapper p-top">
+                            <div class="image">
+                                <img src="../portfolio_v1/img/corporate_logo.jpg" alt="Trung Nguyen Coffee Logo" width="500" height="500">
+                                <div class="content">
+                                    <h2>Corporate Logo</h2>
+                                    <h4>Trung Nguyen Coffee</h4>
+                                    <a href="corporatelogo.html" class="button">See Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             
-
-                <div class="row-sub">
-                    <div class="half-width-wrapper p-top">
-                        <div class="image">
-                            <img src="../portfolio_v1/img/bouncingball.jpg" alt="Bouncing Ball Animation" width="500" height="500">
-                            <div class="content">
-                                <h2>Animation</h2>
-                                <h4>Bouncing Ball</h4>
-                                <a href="bouncingball.html" class="button">See Details</a>
+                <div class="container">
+                    <div class="row-sub">
+                        <div class="half-width-wrapper p-top">
+                            <div class="image">
+                                <img src="../portfolio_v1/img/bouncingball.jpg" alt="Bouncing Ball Animation" width="500" height="500">
+                                <div class="content">
+                                    <h2>Motion Graphics</h2>
+                                    <h4>Bouncing Ball</h4>
+                                    <a href="bouncingball.html" class="button">See Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="half-width-wrapper p-top">
-                        <div class="image">
-                            <img src="../portfolio_v1/img/editorial.jpg" alt="Editorial Design" width="500" height="500">
-                            <div class="content">
-                                <h2>Editorial Design</h2>
-                                <h4>Charles & Ray Eames</h4>
-                                <a href="editorial.html" class="button">See Details</a>
+                </div>
+                <div class="container">
+                    <div class="row-sub">
+                        <div class="half-width-wrapper p-top">
+                            <div class="image">
+                                <img src="../portfolio_v1/img/editorial_homepage.jpg" alt="Editorial Design" width="500" height="500">
+                                <div class="content">
+                                    <h2>Editorial Design</h2>
+                                    <h4>Charles & Ray Eames</h4>
+                                    <a href="editorial.html" class="button">See Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -124,13 +145,16 @@
         <div class="container">
             <nav class="site-nav">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#top">HOME</a></li>
+                    <li><a href="#works">PROJECTS</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                 </ul>
             </nav>
         </div>
     </footer>
 
+        <!-- SCROLL JS FILE -->
+        <script src="js/scroll.js"></script>
         <!-- MAIN JS FILE -->
      <script src="js/script.js"></script>
 
