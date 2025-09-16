@@ -364,7 +364,7 @@ body.demo::before {
 
 /* SECTIONS */
 section {
-    padding: 1em 2em 2em 2em;
+    padding: 1em;
 }
 
 /* HERO */
@@ -962,12 +962,12 @@ hr {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: transform 0.5s;
+    transition: all ease-in-out 0.3s;
 }
 
 .content > * {
     transform: translateY(0);
-    transition: transform 0.5s;
+    transition: all ease-in-out 0.3s;
 }
 
 .content:hover {
@@ -989,13 +989,14 @@ hr {
 .half-width-wrapper img {
     height: 100%;
     width: 100%;
-    transition: transform 0.5s;
+    transition: all ease-in-out 0.3s;
 }
 
 .half-width-wrapper:hover img {
     opacity: 0.1;
-    transform: scale(1.3);
 }
+
+
 
 /* .content {
     position: absolute;
@@ -1012,21 +1013,21 @@ hr {
 .content h2 {
     margin: 0;
     opacity: 0;
-    transition: transform 0.5s;
+    transition: all ease-in-out 0.3s;
 }
 
 .content h4 {
     opacity: 0;
-    transition: transform 0.5s;
+    transition: all ease-in-out 0.3s;
 }
 
 .content a {
     opacity: 0;
-    transition: transform 0.5s;
+    transition: all ease-in-out 0.3s;
 }
 
 .image:hover .content h2 {
-    padding-top: 2em;
+    padding-top: 1em;
     opacity: 1;
 }
 
@@ -1050,7 +1051,7 @@ hr {
     .image:hover .content h2 {
         position: absolute;
         opacity: 1;
-        font-size: 1.5em;
+        font-size: 1.25em;
         padding-top: 0;
     }
     
