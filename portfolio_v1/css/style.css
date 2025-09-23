@@ -304,7 +304,7 @@ body.demo::before {
 .site-header .container {
     max-width: none;
     background-color: rgba(244, 244, 244, 1);
-    padding: 1em 0em;
+    padding: 1em 0em 0em 0em;
 }
 
 .gif {
@@ -338,7 +338,7 @@ body.demo::before {
     font-size: 1em;
     margin: 0;
     text-align: center;
-    margin-left: 1em;
+    margin: 0.5em;
 }
 
 /* SITE-NAV */
@@ -404,9 +404,9 @@ section {
 }
 
 .site-footer .container {
-    background-color: rgba(141,118,91,.5);
+    background-color: rgba(244, 244, 244, 1);
     max-width: none;
-    padding: 1em 0 1em 0;
+    padding: 1em 0 0em 0;
 }
 
 .button,
@@ -527,7 +527,7 @@ h3 a:hover {
 }
 
 .site-main .container {
-    padding: 0 3em 0 2em;
+    padding: 0;
 }
 
 .caption .container {
@@ -574,7 +574,7 @@ h3 a:hover {
     gap: 10px;
     width: 100%;
     background-color: var(--color-hero-background);
-    padding: 0 3em 3em 3em;
+    padding: 0 4em 2em 4em;
     margin: 0;
 }
 
@@ -754,7 +754,7 @@ hr {
         position: absolute;
     }
     .site-header .container {
-        padding-bottom: 2.5em;
+        padding-bottom: 0;
     }
     .toggle-nav .site-nav {
         text-align: right;
@@ -790,12 +790,12 @@ hr {
     .toggle-nav .site-nav .menu-button.navicon {
         border: none;
         color: rgba(244, 244, 244, 1);
-        padding: 1.5em 1.5em 2.5em 1.5em;
+        padding: 1.5em 1.5em 1.75em 1.5em;
     }
     .toggle-nav .site-nav .menu-button.navicon::after {
         content: "\2630";
         display: inline-block;
-        color: rgba(0,0,0,.8);
+        color: #6d5646;
         font-size: 1.75em;
     }
     .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
@@ -857,6 +857,7 @@ hr {
     height: auto;
     place-content: center;
 }
+
 /* 
 .one-half.process,
 .row-intro.sitemap {
@@ -1026,6 +1027,10 @@ hr {
     transition: all ease-in-out 0.3s;
 }
 
+.image img {
+    display: block;
+}
+
 .image:hover .content h2 {
     padding-top: 1em;
     opacity: 1;
@@ -1068,3 +1073,7 @@ hr {
         scale: 0.5;
         margin-top: 8em;
     }}
+
+#works .fadeandscaleIn-caption {
+    padding: 0 3em 0 4em;
+}
