@@ -790,7 +790,7 @@ hr {
     .toggle-nav .site-nav .menu-button.navicon {
         border: none;
         color: rgba(244, 244, 244, 1);
-        padding: 1.5em 1.5em 1.75em 1.5em;
+        padding: 1.5em 1.5em 2em 1.5em;
     }
     .toggle-nav .site-nav .menu-button.navicon::after {
         content: "\2630";
