@@ -712,6 +712,7 @@ ul li {
 } */
 
 .caps,
+.one-third.intro h4,
 .two-thirds.intro h4 {
     font-weight: 600;
 }
@@ -869,9 +870,9 @@ hr {
     filter: drop-shadow(1px 1px 3px lightgray);
 } */
 
-.row-intro .column.one-half {
+/* .row-intro .column.one-half {
     filter: drop-shadow(1px 1px 3px lightgray);
-}
+} */
 
 .live {
     font-size: inherit;
