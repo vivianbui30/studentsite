@@ -1,3 +1,3 @@
 # studentsite
 
-[View Site](https://vivian30.github.io/studentsite)
+[View Site](https://vivianbui30.github.io/studentsite)
