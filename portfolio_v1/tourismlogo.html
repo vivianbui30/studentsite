@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Istanbul</title>
+    <meta name="description" content="This is a starter HTML + CSS + JS boilerplate set of code for website projects."/>
+
+    <!-- FOR MOBILE / SMALL SCREENS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/vet4elh.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+    <header class="site-header toggle-nav" data-navstate="closed">
+        <div class="container">
+            <div class="site-id">
+                <h1><a href="index.html"><img src="img/logo.png" alt="Name" width="200" height="50"/></a></h1>
+            </div>
+            <nav class="site-nav">
+                <div class="menu-button navicon">Menu</div>
+                <ul>
+                    <li><a href="works.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+
+        <section id="projects">
+            <div class="container">
+                <div class="row-main">
+                    <div class="two-thirds column">
+                        <h1>Istanbul</h1>
+                        <h3>Tourism Logo Redesign</h3>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="intro">
+            <div class="container">
+                <div class="row-intro">
+                    <div class="column one-third intro">
+                        <ul class="project-info">
+                            <li><strong class="caps">CLIENT: </strong>College</li>
+                            <li><strong class="caps">PROJECT TYPE: </strong>Logo Redesign</li> 
+                            <li><strong class="caps">COMPETENCIES: </strong>Illustration, Iconography</li>                     
+                            <li><strong class="caps">SOFTWARE: </strong>Illustrator, Photoshop</li>
+                        </ul>
+                    </div>
+                    <div class="column two-thirds intro">
+                        <h3>"SELAM!"</h3>
+                        <h4>The Challenge</h4>
+                        <p>For this project, I was tasked to design a city logo to represent the city's unique blend of history, culture, and natural beauty. The challenge is to create a logo which combines both complexity and simplicity, memorable, also resonates with locals and extends a warm welcome, hospitable greeting to visitors. </p>
+                        <h4>The Solution</h4>
+                        <p>After researching about the city, I found out Istanbul is rich in history and culture, and also the presence of the cats in the city is part of what makes Istanbul unique. So I decided to blend the cat symbol with the city’s ancient art history to craft Istanbul’s tourism logo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="process">
+            <div class="container">
+                <div class="row-intro">
+                    <h3>BRAINSTORM & SKETCHES</h3>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                    <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="img/sketch1.JPG" alt="Sketch 1" width="504" height="672"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/sketch2.JPG" alt="Sketch 2" width="504" height="672"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/sketch3.JPG" alt="Sketch 3" width="504" height="672"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/sketch4.JPG" alt="Sketch 4" width="504" height="672"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/sketch5.JPG" alt="Sketch 5" width="504" height="672"/>
+                            </div>
+                        </div>
+                    <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                <!-- SWIPER JS - THIS GOES IN THE BOTTOM OF YOUR .HTML DOCUMENT INSIDE OF BODY-->
+                        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                <!-- SWIPER JS INIT - THIS GOES IN THE BOTTOM OF YOUR .HTML DOCUMENT INSIDE OF BODY AFTER SWIPER.JS -->
+                        <script>
+                            const swiper = new Swiper('.swiper', {
+                            // Optional parameters
+                            loop: true,
+                        
+                            // If we need pagination
+                            pagination: {
+                            el: '.swiper-pagination',
+                            },
+                        
+                            // Navigation arrows
+                            navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                            },
+                        });
+                        </script>
+                <div class="row-intro">
+                    <h3>DIGITALIZE</h3>
+                </div>
+                <div class="row-intro">
+                    <img src="img/tourismlogo_digital.png" width="1512" height="889"/>
+                </div>
+                <div class="row-intro">
+                    <h3>EXPLORATION</h3>
+                </div>
+                <div class="row-intro">
+                    <div class="column one-third final">
+                        <img src="img/tourismlogo_v1.png" width="500" height="500"/>
+                        <p>Istanbul is famous for its impressive domes, for its rich and diverse art history. We can easily recognize the architecture  on the doors or windows at most domes in Istanbul. Inspired by that, I incorporated the mosque floor plan with Islamic pattern.</p>
+                    </div>
+                    <div class="column one-third final">
+                        <img src="img/tourismlogo_v2.png" width="500" height="500"/>
+                        <p>This concept was inspired by  Shahmaran - a mythical half-woman and half-snake figure. The complexity in Shahmaran mythical form, moral narrative, and symbolic richness,  much like Istanbul, which is a melting pot of diverse cultures and traditions.</p>
+                    </div>
+                    <div class="column one-third final">
+                        <img src="img/tourismlogo_v3.png" width="500" height="500"/>
+                        <p>Istanbul is often referred to “Catstanbul”, cats are deeply integrated into Istanbul’s culture and locals’ daily life. I decided to add ‘Turkish taste’ to the cat by blending  the Ottoman design into the cat symbol which could elevate the logo.</p>
+                    </div>
+                </div>
+                
+                <div class="row-intro">
+                    <h3>FINAL</h3>
+                </div>
+                <section id="final">
+                    <div class="container">
+                        <div class="row-intro">
+                            <img src="img/tourismlogo_bag.jpg" width="1500" height="1000"/>
+                        </div>
+                        <div class="row-intro">
+                            <img src="img/tourismlogo_shirt.png" width="1500" height="2000"/>
+                        </div>
+                        <div class="row-intro">
+                            <img src="img/tourismlogo_postcard.jpg" width="1500" height="1000"/>
+                        </div>
+                    </div>
+                </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="site-nav">
+                <hr>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="works.html">PROJECTS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+        <!-- MAIN JS FILE -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

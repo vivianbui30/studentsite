@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ao Dai Heritage - Framework</title>
+    <meta name="description" content="A simple HTML CSS and JS starter base">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/cdj7pnl.css">
+</head>
+<body>
+
+    <header class="site-header">
+
+        <!-- INLINE SVG LOGO EXAMPLE
+        <a href="index.html"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 500 500">
+            <path d="M486.13,146.47c.57-4.69.86-9.49.86-14.33s-.29-9.63-.86-14.33c-6.49-53.65-49.01-96.2-102.65-102.76-4.74-.58-9.57-.88-14.46-.88s-9.72.3-14.46.88c-54.73,6.68-97.89,50.86-103,106.08-4.9-55.42-48.15-99.82-103.03-106.52-4.74-.59-9.57-.88-14.46-.88s-9.72.29-14.46.88C65.97,21.16,23.45,63.71,16.96,117.37c-.57,4.69-.86,9.49-.86,14.33s.29,9.63.86,14.33c6.6,54.48,50.37,97.53,105.19,103.03-55.23,5.13-99.44,48.35-106.06,103.12-.57,4.7-.86,9.49-.86,14.33s.29,9.64.86,14.34c6.49,53.65,49.01,96.2,102.65,102.75,4.74.59,9.57.89,14.46.89s9.71-.3,14.46-.89c54.82-6.69,98.02-51.01,103.02-106.34,5.02,55.3,48.2,99.57,103.01,106.26,4.74.59,9.57.88,14.46.88s9.72-.29,14.46-.88c53.64-6.55,96.16-49.1,102.65-102.76.57-4.69.86-9.49.86-14.33s-.29-9.63-.86-14.33c-6.5-53.68-49.08-96.26-102.77-102.76,54.1-6.15,97.11-48.89,103.64-102.87ZM250.67,267.48c-1.21-9.25-8.39-16.7-17.53-18.31,9.48-1.26,17.05-8.79,18.38-18.25,1.05,8.89,7.61,16.16,16.15,18.27-8.91,1.81-15.84,9.18-17,18.29Z"/>
+        </svg></a> -->
+
+        <!-- INLINE IMG LOGO EXAMPLE -->
+            <!-- <a href="index.html"><img src="img/aodai_logo.svg" width="50" height="50" alt="aodai_framework logo"></a>
+        </div> -->
+
+
+        <nav class="navbar">
+            <div class="site-logo">
+                <a class="navbar-brand" href="#"><img src="img/aodai_logo_bicolor.png" alt="aodai logo" width="75" height="75"></a>
+            </div>
+            <div class="sound">
+                <p>/aʊˈdaɪ,  ɔːˈdaɪ,  aʊˈzaɪ/</p>
+                <img onclick="playAudio()" src="img/speaker_icon.png" width="50" height="50">
+                <audio id="myAudio" src="img/aodai.mp3"></audio>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav5" aria-controls="navbarNav5" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav5">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">At A Glance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">How It All Began</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Where Tradition Breaths</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="site-main">
+
+        <section class="hero text-centered">
+            <div class="row">
+                <div class="one-third textimg">
+                    <img class="slide-from-top-and-fade-in delay-1" src="img/ao.png" alt="letter ao" width="500" height="500">
+                </div>
+                <div class="one-third img">
+                    <img class="slide-from-top-and-fade-in delay-1" src="img/hero_img.png" alt="hero image" width="699" height="674">
+                </div>
+                <div class="one-third textimg">
+                    <img class="slide-from-top-and-fade-in delay-1" src="img/dai.png" alt="letter dai" width="500" height="500">
+                </div>
+            </div>
+            <div class="quote">
+                <blockquote>
+                    <h6 class="slide-from-top-and-fade-in delay-5">Step into the timeless elegance of the ao dai, where <em><strong>history, culture,</em></strong> and <em><strong>beauty</em></strong> are woven into every seam.</h6>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="introduction">
+            <div class="container">
+                <div class="img-full-width">
+                    <img src="img/theintroduction.png" alt="introduction section" width="7721" height="3100">
+                    <div class="title-centered">
+                        <h1>At a glance</h1>
+                        <h4>Unfold <b><em>the legacy</b></em> behind this timeless garment.</h4>
+                    </div>
+                </div>
+                <!-- <div class="one-half centered">
+                    <h3>At A Glance</h3>
+                    <p>Unfold the legacy behind this timeless garment.</p>
+                </div>         -->
+            </div>
+        </section>
+
+        <section id="history">
+            <div class="student">
+                <div class="one-third left-img">
+                    <img src="img/left_1.png" alt="placeholder" width="1300" height="679">
+                    <img src="img/left_2.png" alt="placeholder" width="1300" height="679">
+                    <img src="img/left_3.png" alt="placeholder" width="1300" height="679">
+                    <img src="img/left_4.png" alt="placeholder" width="1300" height="679">
+                    <img src="img/left_5.png" alt="placeholder" width="1300" height="679">
+                </div>
+                <div class="one-third student-meta">
+                    <p class="drop-cap">The history of the creation and development of the Vietnamese ao dai has been studied and updated by researchers for years now. The ups, downs and the constant changes have formed a distinctive Vietnamese cultural trait. The ao dai’s historical and cultural values have been gradually reinforced by the Vietnamese people while supported and cherished by their international friends. </p>
+                    <blockquote>
+                        <p>The ao dai covers everything, hides nothing.</p>
+                    </blockquote>
+                    <p>Following the country’s reunification in 1975, life transformed with every passing day, bringing the ao dai into a new era. No longer reserved for ceremonies or schoolyards, the garment emerged as a cultural emblem, quietly mirroring the inner shifts of the Vietnamese spirit. We trace the ao dai’s journey—from the stately five-panel form to the contemporary silhouette—and explore the delicate differences in shape, fabric and meaning woven into each fold.</p>
+                </div>
+                <div class="one-third right-img">
+                    <img src="img/right_1.png" alt="placeholder" width="1300" height="679">
+                    <img src="img/right_2.png" alt="placeholder" width="1300" height="679">
+                    <img src="img/right_3.png" alt="placeholder" width="1300" height="679">
+                    <img src="img/right_4.png" alt="placeholder" width="1300" height="679">
+                    <img src="img/right_5.png" alt="placeholder" width="1300" height="679">
+                </div>
+            </div>
+        </section>
+        
+        <section id="history">
+            <div class="container">
+                <div class="img-full-width">
+                    <img src="img/thehistory.png" alt="history section" width="3941" height="1970">
+                    <div class="title-centered">
+                        <h1>How it all began</h1>
+                        <h4>Journey through the <b><em>history</b></em> of Vietnam's most <b><em>iconic attire.</b></em></h4>
+                    </div>
+                </div>           
+            </div>
+        </section>
+
+        <section>
+            <!-- Vertical TImeline Start -->
+            <div class="vertical_timeline">
+                <!-- Timeline Lists -->
+                <ul class="timeline">
+                    <li class="timeline_lists">
+                        <div class="timeline_content">
+                            <div class="contents_container contents_container-1">
+                                <span>
+                                <ul>
+                                    <li>Four front-and-back panels</li>
+                                    <li>A long, flowing skirt under the tunic</li>
+                                    <li>A rectangular camisole underneath serves as a undergarment</li>
+                                    <li>Silk sash tied around waist</li>
+                                    <li>Usually wear with large, flat, round hat, headscarf</li>
+                                </ul>
+                                </span>
+                            </div>
+                            <div class="content content-1">
+                                <h1>1645</h1>
+                                <h2>FOUR PIECE AO DAI</h2>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline_lists">
+                        <div class="timeline_content">
+                            <div class="contents_container contents_container-2">
+                                <span>
+                                <ul>
+                                    <li>Four front-and-back panels</li>
+                                    <li>A long, flowing skirt under the tunic</li>
+                                    <li>A rectangular camisole underneath serves as a undergarment</li>
+                                    <li>Silk sash tied around waist</li>
+                                    <li>Usually wear with large, flat, round hat, headscarf</li>
+                                </ul>
+                                </span>
+                            </div>
+                            <div class="content content-2">
+                                <h1>1744</h1>
+                                <h2>FIVE PIECE AO DAI</h2>
+                            </div>
+                        </div>
+                    </li>
+                
+                    <li class="timeline_lists">
+                        <div class="timeline_content">
+                            <div class="contents_container contents_container-3">
+                                <span>
+                                <ul>
+                                    <li>Made from luxurious fabric (silk or brocade)</li>
+                                    <li>High Mandarin collar</li>
+                                    <li>Wider sleeves</li>
+                                    <li>Long, flowing silhouette, tight-fitting bodice with long panels</li>
+                                    <li>Intricate embroidery: gold thread, phoenixes, dragons, lotuses, royal motifs</li>
+                                    <li>Paired with a royal headdress or crown</li>
+                                </ul>
+                                </span>
+                            </div>
+                            <div class="content content-3">
+                                <h1>1807</h1>
+                                <h2>ROYAL AO DAI</h2>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline_lists">
+                        <div class="timeline_content">
+                            <div class="contents_container contents_container-4">
+                                <span>
+                                <ul>
+                                    <li>Two long panels (front & back)</li>
+                                    <li>Closer fit to the body, flared bottom panels for movement</li>
+                                    <li>High mandarin collar, structured neckline</li>
+                                    <li>Set-in sleeves, side closures</li>
+                                    <li>Soft silk or satin, light colors</li>
+                                    <li>Inspired by Parisian fashion — structured shoulders, form-fitting design</li>
+                                    <li>Often worn with heels and styled hair</li>
+                                </ul>
+                                </span>
+                            </div>
+                            <div class="content content-4">
+                                <h1>1934</h1>
+                                <h2>LE MUR AO DAI</h2>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline_lists">
+                        <div class="timeline_content">
+                            <div class="contents_container contents_container-5">
+                                <span>
+                                <ul>
+                                    <li>Front and back panels split high at the waist</li>
+                                    <li>Tall Mandarin-style collar (about 3–5 cm)</li>
+                                    <li>Long, fitted sleeves that extend to the wrists</li>
+                                    <li>Tight, tailored bodice, waist shaping</li>
+                                    <li>Minimal embellishment, favoring plain silk or subtle floral patterns</li>
+                                    <li>Worn over a pair of loose, wide-legged pants</li>
+                                </ul>
+                                </span>
+                            </div>
+                            <div class="content content-5">
+                                <h1>1950</h1>
+                                <h2>HIGH-COLLARED AO DAI</h2>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline_lists">
+                        <div class="timeline_content">
+                            <div class="contents_container contents_container-6">
+                                <span>
+                                <ul>
+                                    <li>Rounded, U-shaped neckline</li>
+                                    <li>High side slits paired with flowing silk pants for movement</li>
+                                    <li>Slim, tailored bodice</li>
+                                    <li>Long, fitted sleeves often set in smoothly at the shoulder</li>
+                                    <li>Wide variety of fabric</li>
+                                </ul>
+                                </span>
+                            </div>
+                            <div class="content content-6">
+                                <h1>1958</h1>
+                                <h2>BOAT NECK AO DAI</h2>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline_lists">
+                        <div class="timeline_content">
+                            <div class="contents_container contents_container-7">
+                                <span>
+                                <ul>
+                                    <li>Diagonal sleeve seams running from the neckline to the underarm, with no distinct shoulder seam</li>
+                                    <li>More comfortable and flattering fit</li>
+                                    <li>Long, fitted sleeves that taper gently at the wrists</li>
+                                    <li>Streamlined bodice,  typically long, reaching below the knees</li>
+                                    <li>Popular for formal wear</li>
+                                    <li>A high, close-fitting mandarin collar is a common feature, though variations in neckline are also popular</li>
+                                </ul>
+                                </span>
+                            </div>
+                            <div class="content content-7">
+                                <h1>1960</h1>
+                                <h2>RAGLAN-SLEEVE AO DAI</h2>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline_lists">
+                        <div class="timeline_content">
+                            <div class="contents_container contents_container-8">
+                                <span>
+                                <ul>
+                                    <li>A lower or different neckline style</li>
+                                    <li>Bold prints & patterns reflecting the hippie culture at that time</li>
+                                    <li>Flowy silhouette, looser fit, shorter length, wider sleeves, such as bell-sleeves</li>
+                                    <li>Lighter and more comfortable fabric like silk and linen for a relaxed look</li>
+                                    <li>Often paired with headbands, bangles, or sandals</li>
+                                </ul>
+                                </span>
+                            </div>
+                            <div class="content content-8">
+                                <h1>1968</h1>
+                                <h2>HIPPIE AO DAI</h2>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline_lists">
+                        <div class="timeline_content">
+                            <div class="contents_container contents_container-9">
+                                <span>
+                                <ul>
+                                    <li>Unique, hand-painted designs, one-of-a-kind pattern</li>
+                                    <li>High-quality fabrics to hold paint</li>
+                                    <li>Wide range of motifs, diverse color palettes</li>
+                                    <li>Minimal embellishments, mainly focus on the painted artwork</li>
+                                    <li>Traditional long, flowing silhouette with a high collar and flowing sleeves</li>
+                                    <li>Loose fitting pants</li>
+                                </ul>
+                                </span>
+                            </div>
+                            <div class="content content-9">
+                                <h1 class="custom">Late</h1>
+                                <h1>1980s</h1>
+                                <h2>PAINTED AO DAI</h2>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline_lists">
+                        <div class="timeline_content">
+                            <div class="contents_container contents_container-10">
+                                <span>
+                                <ul>
+                                    <li>Rich brocade fabric, intricate pattern</li>
+                                    <li>Textured surface, motifs such as florals, phoenixes, dragons, geometric designs</li>
+                                    <li>Shiny, elegant finish - fabric often reflects light, giving a royal aura</li>
+                                    <li>Deep, elegant colors – gold, red, royal blue, emerald green, or ivory are common</li>
+                                    <li>Traditional silhouette - fitted bodice, long tunic over wide-legged pants</li>
+                                    <li>Minimal painting or embroidery, the fabric itself provides decoration</li>
+                                </ul>
+                                </span>
+                            </div>
+                            <div class="content content-10">
+                                <h1 class="custom">Late</h1>
+                                <h1>1990s</h1>
+                                <h2>BROCADE AO DAI</h2>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Timeline Rod -->
+                <div class="timeline_progress_bar">
+                    <div class="timeline_progress">
+                    </div>
+                </div>
+                
+                <div class="timeline_points">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <!-- Vertical TImeline End -->
+        </section>
+
+        <section id="symbol">
+            <div class="container">
+                <div class="img-full-width">
+                    <img src="img/thesymbol.png" alt="symbol section" width="3439" height="1327">
+                    <div class="title-centered">
+                        <h1>Where tradition breaths</h1>
+                        <h4>Ao dai is a reflection of <em><strong>identity, pride,</strong></em> and <em><strong>timeless beauty.</strong></em></h4>
+                    </div>
+                </div>           
+            </div>
+        </section>
+
+        <section id="cultural symbol">
+            <div class="row">
+                <div class="one-half">
+                    <img src="img/symbol_cultural.png" alt="cultural symbolism" width="1300" height="679">
+                </div>
+            
+                <div class="one-half text">
+                    <h3>THE CULTURAL WHISPERS</h3>
+                    <p>The ao dai stands as a powerful symbol of Vietnamese culture, embodying national identity, elegance, and dignity through its graceful design. Over time, it has evolved from traditional forms to modern styles, reflecting both continuity and adaptation in the face of change. Since 1975, the ao dai has grown beyond ceremonial use to become a unifying emblem of the Vietnamese spirit, representing resilience and cultural pride. Nowadays, ao dai is not only cherished within Vietnam but also recognized globally as a distinctive ambassador of the nation’s heritage.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="social symbol">
+            <div class="row swapped">
+                <div class="one-half">
+                    <img src="img/symbol_social.png" alt="social symbolism" width="1300" height="679">
+                </div>
+
+                <div class="one-half text">
+                    <h3>A SILENT CODE OF SOCIETY</h3>
+                    <p>The ao dai carries strong social symbolism in Vietnamese life, as it reflects both the occasion and the wearer’s role in society. In schools, the white ao dai symbolizes the innocence and aspirations of youth, creating a shared identity among students. At weddings and festivals, brightly colored and richly decorated ao dai express joy, prosperity, and communal celebration. In contrast, during funerals or solemn gatherings, subdued or dark ao dai signify respect and mourning. Across these settings, the garment functions as a social marker, signaling formality, unity, and the wearer’s participation in collective cultural values.</p>
+                </div> 
+            </div>
+        </section>
+
+
+        
+        
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="img-full-width">
+                <img src="img/footer_shape.png" alt="ao dai collar shape footer" width="1600" height="299">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <img src="img/aodai_nav_bicolor.svg" alt="footer logo" width="150" height="150">
+                </div>
+                <div class="col-6 push-7">
+                    <h4>At a glance</h4>
+                    <h4>How it all began</h4>
+                    <h4>Where tradition breaths</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function playAudio() {
+            let audioPlayer = document.getElementById('myAudio');
+            audioPlayer.play();
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

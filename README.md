@@ -1,3 +1,4 @@
-# studentsite
+# Vivian Bui
+This is my student site for NMA courses.
 
-[View My Site](https://vivianbui30.github.io/studentsite)
+[View my site](https://vivianbui30.github.io/studentsite/)

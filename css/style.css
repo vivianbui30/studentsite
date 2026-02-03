@@ -1,0 +1,364 @@
+/* GLOBAL RESET */
+* {box-sizing: border-box;}
+body {margin: 0;}
+
+/* GLOBAL COLORS */
+body {color: rgb(34, 45, 63);}
+a {color: rgb(34, 45, 63, 0.6);}
+a:hover {color: rgba(34, 45, 63);}
+
+/* GLOBAL TYPOGRAPHY */
+body {
+    font-family: "neulis-sans", sans-serif;
+    font-size: 100%; /* 16px */
+    line-height: 1.3;
+    font-weight: 400;
+    color: rgba(34, 45, 63, 0.7);
+}
+
+/* HEADER */
+/* header {
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+} */
+
+header { 
+    background-color: rgba(244, 244, 244, 1);
+    color: rgba(0,0,0,.5);
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+header a {
+    color: rgba(28, 35, 45,.5);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: rgba(28, 35, 45);
+}
+
+.site-id h1 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.site-header {
+    max-width: none;
+    background-color: rgba(244, 244, 244, 1);
+    padding: 1em;
+}
+
+/* SITE NAV */
+.site-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.site-nav a {
+    display: block;
+    padding: 1em;
+}
+
+.site-nav a:hover {
+    font-weight: 600;
+}
+
+/* MAIN */
+main { 
+    background: rgba(244, 244, 244, 1);
+    font-family: "neulis-sans", sans-serif;
+    color: rgba(28, 35, 45,.5);
+}
+
+section {
+    padding: 3em 1em;
+}
+
+/* FOOTER */
+footer {
+    border-top: 1px solid rgba(0,0,0,.05);
+    padding: 3em;
+    background-color: rgba(244, 244, 244, 1);
+}
+
+/* LAYOUT */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 3em 1em;
+}
+
+@media (min-width: 768px) {
+    .two-col-sidebar {
+        display: grid;
+        grid-template-columns: 20em auto;
+    }
+    .two-col-sidebar aside {
+        border-right: 1px solid rgb(28, 35, 45,.1);
+    }
+}
+
+.aside {
+    padding: 0 1em;
+}
+
+.primary {
+    padding: 0 1em;
+}
+
+.primary a {
+    color: rgba(28, 35, 45,.5);
+}
+
+.primary a:hover {
+    color: rgba(28, 35, 45);
+    font-weight: 600;
+}
+
+.two-col-sidebar a {
+    color: rgba(28, 35, 45,.5);
+}
+
+.two-col-sidebar a:hover {
+    color: rgba(28, 35, 45);
+    font-weight: 600;
+}
+
+/* SOCIAL NAV */
+.social-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-nav a {
+    display: block;
+    padding: 1em;
+}
+
+/* HERO STYLING */
+.hero .intro {
+    /* margin: 3em; */
+    padding: 3em 1.5em 3em 1.5em;
+    background-color: transparent;
+    flex-basis: 30em;
+    opacity: 100%;
+    border-radius: 1em;
+    box-shadow: 0 0 1em 0 #ffffff;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    background-color: transparent;
+    color: rgba(28, 35, 45, .5);
+    padding: 3em 1em;
+}
+
+.hero h2 {
+    font-family: "the-seasons", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5em;
+    line-height: 1.2em;
+    margin: 0 auto;
+    color: rgba(28, 35, 45, .7);
+}
+
+.hero p {
+    max-width: 35em;
+    margin: 1.5em auto;
+    font-weight: 500;
+    color: rgba(244, 244, 244, .8);
+}
+
+/* COURSES SECTION */
+.courses {
+    background-size: cover;
+    background-position: top;
+    padding: 3em 1em 12em 1em;
+    display: grid;
+    justify-content: center;
+    background-color: rgba(244, 244, 244, 1);
+}
+
+.courses ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.courses h3 {
+    font-family: "the-seasons", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(28, 35, 45, .7);
+    margin: 1em;
+    font-size: 200%;
+}
+
+.courses .cards {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    padding: 2em 0;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.courses .cards li {
+    min-width: 40%;
+}
+
+.courses .cards a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 0.875em;
+    padding: 4em 2em;
+    text-decoration: none;
+    box-shadow: 0 0 1em 0 #aaaaaa;
+}
+
+.courses .cards a:hover {
+    background-color: grey;
+    color: white;
+}
+
+.courses .cards span {
+    display: block;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+/* FOOTER */
+footer {
+    font-family: "neulis-sans", sans-serif;
+    /* background-color: rgb(236, 234, 250); */
+}
+
+footer a {
+    color: rgba(28, 35, 45,.5);
+}
+
+footer a:hover {
+    color: rgba(28, 35, 45);
+    font-weight: 600;
+}
+
+/* STYLING FOR SUB PAGES */
+.page-sub .hero {
+    background-color: rgba(244, 244, 244, 1);
+    color: rgba(28, 35, 45,.5);
+}
+
+.page-sub .coursework {
+    background-color: rgba(244, 244, 244, 1);
+}
+
+/* COURSEWORK SECTION */
+.coursework {
+    padding: 3em 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(244, 244, 244, 1);
+    color: rgba(28, 35, 45,.5);
+}
+
+.projects {
+    margin: 2em;
+    color: rgba(28, 35, 45,.5);
+}
+
+.projects h3 {
+    color: rgba(28, 35, 45,.5);
+}
+
+.projects a {
+    color: rgba(28, 35, 45,.5);
+}
+
+.projects a:hover {
+    color: rgba(28, 35, 45);
+    font-weight: 500;
+}
+
+.website, .mobile, .personal, .client-website, .prep, .work-study, .tests {
+    margin: 2em;
+}
+
+.website a {
+    color: rgba(28, 35, 45,.5);
+}
+
+.website a:hover {
+    color: rgba(28, 35, 45);
+    font-weight: 500;
+}
+
+.mobile a {
+    color: rgba(28, 35, 45,.5);
+}
+
+.mobile a:hover {
+    color: rgba(28, 35, 45);
+    font-weight: 500;
+}
+
+/* CODE BLOCKS */
+
+pre code {
+    width: 100%;
+    display: block;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 1em 3em;
+    margin-bottom: 1em;
+    line-height: 1.5;
+  }
+
+.markup-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 1em 3em;
+    margin-bottom: 1em;
+}
+
+/* DEFINITION LISTS */
+dt {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+dd {
+    margin: 0;
+}
+
+.page-home .hero {
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position: bottom;
+    padding: 27vh 3em;
+    background-color: rgba(244, 244, 244, 1);
+}
+
+
+/* FOR DEV PURPOSES */
+/* body * {
+    background-color: rgba(0,0,0,.05) !important;
+    border: 1px solid rgba(0,0,0,.1) !important;
+    color: rgba(0,0,0,.5) !important;
+} */

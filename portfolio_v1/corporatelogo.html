@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Trung Nguyen Coffee</title>
+    <meta name="description" content="This is a starter HTML + CSS + JS boilerplate set of code for website projects."/>
+
+    <!-- FOR MOBILE / SMALL SCREENS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/vet4elh.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+    <header class="site-header toggle-nav" data-navstate="closed">
+        <div class="container">
+            <div class="site-id">
+                <h1><a href="index.html"><img src="img/logo.png" alt="Name" width="200" height="50"/></a></h1>
+            </div>
+            <nav class="site-nav">
+                <div class="menu-button navicon">Menu</div>
+                <ul>
+                    <li><a href="works.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+
+        <section id="projects">
+            <div class="container">
+                <div class="row-main">
+                    <div class="two-thirds column">
+                        <h1>Trung Nguyen Coffee</h1>
+                        <h3>Logo Redesign</h3>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="intro">
+            <div class="container">
+                <div class="row-intro">
+                    <div class="column one-third intro">
+                        <ul class="project-info">
+                            <li><strong class="caps">CLIENT: </strong>College</li>
+                            <li><strong class="caps">PROJECT TYPE: </strong>Logo Redesign</li> 
+                            <li><strong class="caps">COMPETENCIES: </strong>Illustration, Iconography</li>                     
+                            <li><strong class="caps">SOFTWARE: </strong>Illustrator</li>
+                        </ul>
+                    </div>
+                    <div class="column two-thirds intro">
+                        <h3>But first, Vietnamese Coffee!</h3>
+                        <h4>The Challenge</h4>
+                        <p>I was challenged to redesign a logo for a brand of my choice. The logo should be distint, memorable, timeless, scalable, adaptable, and appropriate for the brand use.</p>
+                        <h4>The Solution</h4>
+                        <p>I decided to redesign a logo for a long time Vietnamese coffee brand name Trung Nguyen. I took inspiration from the designs on Dong Son drums, like the ancient human figures, long-tailed flying birds (Lac birds) to represent the longevity and the culture of Vietnamese people. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr></hr>
+        <section id="process">
+            <div class="container">
+                <div class="row-intro">
+                    <h3>BRAINSTORM & SKETCHES</h3>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper">
+                <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="img/corporatelogo_brainstorm.jpg" alt="Placeholder Image" width="500" height="500"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/corporatelogo_sketch1.jpg" alt="Placeholder Image" width="500" height="500"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/corporatelogo_sketch2.jpg" alt="Placeholder Image" width="500" height="500"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/corporatelogo_sketch3.jpg" alt="Placeholder Image" width="500" height="500"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/corporatelogo_sketch4.jpg" alt="Placeholder Image" width="500" height="500"/>
+                        </div>
+                    </div>
+                <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            <!-- SWIPER JS - THIS GOES IN THE BOTTOM OF YOUR .HTML DOCUMENT INSIDE OF BODY-->
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <!-- SWIPER JS INIT - THIS GOES IN THE BOTTOM OF YOUR .HTML DOCUMENT INSIDE OF BODY AFTER SWIPER.JS -->
+                    <script>
+                        const swiper = new Swiper('.swiper', {
+                        // Optional parameters
+                        loop: true,
+                    
+                        // If we need pagination
+                        pagination: {
+                        el: '.swiper-pagination',
+                        },
+                    
+                        // Navigation arrows
+                        navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                        },
+                    });
+                    </script>
+                <div class="row-intro">
+                    <h3>DIGITIZE</h3>
+                </div>
+                <div class="row-intro">
+                    <img src="img/corporatelogo_digital.png" width="1512" height="889"/>
+                </div>
+                <div class="row-intro">
+                    <h3>EXPLORATION</h3>
+                </div>
+                <div class="row-intro">
+                    <div class="column one-third final">
+                        <img src="img/corporatelogo_v1.png" width="500" height="500"/>
+                        <p>For the positive space, I chose an imagery of an elephant to represent Dak Lak Province, which is considered as the elephant land, elephants also symbolize wealth, health, and power of an ethnicity of Vietnamese culture. And the negative space is the stilt house, a traditional house type of Ede ethnic minority of Dak Lak Province.</p>
+                    </div>
+                    <div class="column one-third final">
+                        <img src="img/corporatelogo_v2.png" width="500" height="500"/>
+                        <p>The geometric-shaped human figure inspired by the pattern on Dong Son bronze drum, with the hands holding a coffee plant, the pose of the figure represents the appreciation to the nature resources.</p>
+                    </div>
+                    <div class="column one-third final">
+                        <img src="img/corporatelogo_v3.png" width="500" height="500"/>
+                        <p>A coffee bean shape, instead of the small gap in the middle of the regular coffee bean, replace with the lightning, represents the idea that coffee boost your energy, and keep you stay awake.</p>
+                    </div>
+                </div>
+                
+                <div class="row-intro">
+                    <h3>FINAL</h3>
+                </div>
+                <section id="final">
+                    <div class="container">
+                        <div class="row-intro">
+                            <img src="img/corporatelogo_final.jpg" width="3600" height="2400"/>
+                        </div>
+                        <div class="row-intro">
+                            <img src="img/corporatelogo_packaging.jpg" width="4500" height="3400"/>
+                        </div>
+                        <div class="row-intro">
+                            <img src="img/corporatelogo_coasters.jpg" width="4500" height="3000"/>
+                        </div>
+                    </div>
+                </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="site-nav">
+                <hr>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="works.html">PROJECTS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+        <!-- MAIN JS FILE -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
