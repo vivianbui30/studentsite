@@ -1,0 +1,135 @@
+/* -------------------
+
+TABLE OF CONTENTS 
+
+
+-------------------- */
+
+/* RESET */
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+/* RESPONSIVE IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* SITE STRUCTURE */
+header {
+    /* background-color: yellow; */
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo h1 {
+    margin: 0;
+}
+
+/* TOP NAV */
+.site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+
+main {
+    /* background-color: pink; */
+}
+
+footer {
+    /* background-color: cyan; */
+    padding: 1em;
+}
+
+.social-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;;
+}
+.hero {
+    padding: 6em 1em;
+    background-color: pink;
+}
+
+section {
+    padding: 3em 1em;
+}
+
+/* MAIN IMG GRID */
+.main-image-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    gap: 1em;
+}  
+
+/* SPLASH SCREEN UI */
+.splash-screen {
+    position: fixed;
+    background-color: rgb(0 0 0 / 1);
+    color: white;
+    width: 100%;
+    height: 100svh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    animation-name: splash-chuck-it;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(1,0,1,0);
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+@keyframes splash-chuck-it {
+    100% {
+      translate: -100% 0;
+    }
+}
+
+/* SPLASH SCREEN ANIMATION */
+.splash-logo {
+    animation-name: splash-logo-fadein;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+  
+@keyframes splash-logo-fadein {
+    0% {
+      opacity: 0;
+      scale: .8;
+    }
+    100% {
+      opacity: 1;
+      scale: 1;
+    }
+}
+  
+.shape1 {
+    animation: grow-from-right 1s ease-out forwards .5s; 
+    scale: 0 1; 
+}
+@keyframes grow-from-right {
+    100% {
+      scale: 1 1;
+    }
+}
+  
+.shape2 {
+    animation: grow-from-left 1s ease-out forwards 1.5s;        
+    scale: 0 1; 
+    transform-origin: right center;
+}
+@keyframes grow-from-left {
+    100% {
+      scale: 1 1;
+    }
+}
