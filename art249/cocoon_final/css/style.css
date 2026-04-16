@@ -945,30 +945,8 @@ h1 {
     color: rgba(219,208,206,.8);
 }
 
-/* ON SCROLL: MOVE IN FROM LEFT */
-.nma-onscroll-movein-fromleft {
-    animation: nma-movein-fromleft both linear;
-    animation-timeline: view();
-    animation-range: entry 0% contain 50%;
-  }
-  @keyframes nma-movein-fromleft {
-    0% { translate: 50px; opacity: 0; }
-    100% { translate: 0; opacity: 1; }
-  }
-  
-  /* ON SCROLL: MOVE IN FROM RIGHT */
-  .nma-onscroll-movein-fromright {
-    animation: nma-movein-fromright both linear;
-    animation-timeline: view();
-    animation-range: entry 0% contain 50%;
-  }
-  @keyframes nma-movein-fromright {
-    0% { translate: -50px; opacity: 0; }
-    100% { translate: 0; opacity: 1; }
-  }
-  
-  /* ON SCROLL: FADE IN */
-.nma-onscroll-fadein {
+/* ON SCROLL: FADE IN */
+  .nma-onscroll-fadein {
     animation: nma-fade-in both linear;
     animation-timeline: view();
     animation-range: entry 0% contain 50%;
@@ -990,4 +968,28 @@ h1 {
     animation: move-in ease-in-out; 
     animation-fill-mode: forwards;
     animation-duration: 1s;    
+}
+
+/* ON SCROLL: MOVE IN FROM LEFT */
+.nma-onscroll-movein-fromleft {
+    animation: nma-movein-fromleft both linear;
+    animation-timeline: view();
+    animation-range: entry 0% contain 50%;
+}
+
+@keyframes nma-movein-fromleft {
+    0% { translate: 50px; opacity: 0; }
+    100% { translate: 0; opacity: 1; }
+}
+
+/* ON SCROLL: MOVE IN FROM RIGHT */
+.nma-onscroll-movein-fromright {
+    animation: nma-movein-fromright both linear;
+    animation-timeline: view();
+    animation-range: entry 0% contain 50%;
+}
+
+@keyframes nma-movein-fromright {
+    0% { translate: -50px; opacity: 0; }
+    100% { translate: 0; opacity: 1; }
 }
